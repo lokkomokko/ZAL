@@ -1,0 +1,28 @@
+@import "scss/normalize.css";
+@import "scss/grid.css";
+@import "scss/settings/_settings";
+@import "scss/fonts/fonts";
+@import "scss/sprite/svg-sprite";
+@import "scss/common/common";
+
+html {
+    font-size: 16px;
+}
+body {
+    font-family: museo_1, serif;
+    font-weight: normal;
+    min-height: 100vh;
+    width: 100%;
+    font-size: 1rem;
+    //-webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    color: $color;
+    backface-visibility: hidden;
+}
+//.no-gutters.container, .no-gutters.container-fluid {
+//        padding-left: 0;
+//        padding-right: 0;
+//}
+
+@import "scss/common/header";
+@import "scss/main-page/main-page";

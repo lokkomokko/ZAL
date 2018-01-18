@@ -1,0 +1,27 @@
+<svg width="15" height="15" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>ic_location_on</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(1582 852)">
+<g id="ic_location_on">
+<mask id="mask0_outline" mask-type="alpha">
+<g id="Mask">
+<use xlink:href="#path0_fill" transform="translate(-1578.88 -850.75)" fill="#FFFFFF"/>
+</g>
+</mask>
+<g id="&#240;&#159;&#142;&#168; Color" mask="url(#mask0_outline)">
+<g id="Black">
+<use xlink:href="#path1_fill" transform="translate(-1590.12 -860.125)" fill="#2C2929"/>
+</g>
+<mask id="mask1_outline" mask-type="alpha">
+<g id="Black">
+<use xlink:href="#path1_fill" transform="translate(-1590.12 -860.125)" fill="#FFFFFF"/>
+</g>
+</mask>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 4.375 0C 1.95625 0 0 1.95625 0 4.375C 0 7.65625 4.375 12.5 4.375 12.5C 4.375 12.5 8.75 7.65625 8.75 4.375C 8.75 1.95625 6.79375 0 4.375 0ZM 4.375 5.9375C 3.5125 5.9375 2.8125 5.2375 2.8125 4.375C 2.8125 3.5125 3.5125 2.8125 4.375 2.8125C 5.2375 2.8125 5.9375 3.5125 5.9375 4.375C 5.9375 5.2375 5.2375 5.9375 4.375 5.9375Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 0 0L 31.25 0L 31.25 31.25L 0 31.25L 0 0Z"/>
+</defs>
+</svg>

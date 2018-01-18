@@ -1,0 +1,18 @@
+<svg width="19" height="19" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Search</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(1350 853)">
+<g id="Icon/Search Copy 3">
+<g id="Bounds">
+<use xlink:href="#path0_fill" transform="translate(-1350 -853)" fill="#FFFFFF" fill-opacity="0.01"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path1_fill" transform="translate(-1347.62 -850.625)"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 0L 19 0L 19 19L 0 19L 0 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 9.89583 8.70833L 9.27042 8.70833L 9.04875 8.49458C 9.82458 7.59208 10.2917 6.42042 10.2917 5.14583C 10.2917 2.30375 7.98792 0 5.14583 0C 2.30375 0 0 2.30375 0 5.14583C 0 7.98792 2.30375 10.2917 5.14583 10.2917C 6.42042 10.2917 7.59208 9.82458 8.49458 9.04875L 8.70833 9.27042L 8.70833 9.89583L 12.6667 13.8462L 13.8462 12.6667L 9.89583 8.70833ZM 5.14575 8.70831C 3.1745 8.70831 1.58325 7.11706 1.58325 5.14581C 1.58325 3.17456 3.1745 1.58331 5.14575 1.58331C 7.117 1.58331 8.70825 3.17456 8.70825 5.14581C 8.70825 7.11706 7.117 8.70831 5.14575 8.70831Z"/>
+</defs>
+</svg>

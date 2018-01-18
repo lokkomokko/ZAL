@@ -1,0 +1,91 @@
+.header {
+    padding-left: 0;
+    padding-right: 0;
+    height: 63px;
+    position: relative;
+
+    &-icon {
+        margin-right: em(6px);
+    }
+    &__right {
+        font-size: em(12px);
+        max-width: 450px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 30%;
+    }
+    &__right-call {
+        img {
+            margin-top: -3px;
+        }
+        //white-space: nowrap;
+    }
+    &__right-adress {
+        //white-space: nowrap;
+        span {
+            display: inline-block;
+            line-height: 1.8;
+            border-bottom: 1px solid $red;
+        }
+        img {
+            margin-top: -3px;
+        }
+    }
+    &__right-search {
+        height: 100%;
+        width: 67px;
+        background: $gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            width: 14px;
+        }
+    }
+    &__logo {
+        padding-left: em(24px);
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        svg {
+            width: 126px;
+            margin-top: -2px;
+        }
+    }
+    &__nav {
+        padding-right: 66px;
+    }
+}
+
+
+//header nav link
+.nav-item {
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: em(12px);
+    letter-spacing: 0.125em;
+    cursor: pointer;
+    transition: .2s;
+    text-align: center;
+    padding: 0 8px 0;
+    margin: 0 em(7px);
+
+    display: inline-block;
+    span {
+        border-bottom: 1px solid $red;
+        display: inline-block;
+        padding: 5px 0 3px;
+
+    }
+    &:hover {
+        background-color: $color;
+        color: $white;
+        span {
+            border-bottom: #000000;
+        }
+    }
+}

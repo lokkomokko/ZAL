@@ -1,32 +1,213 @@
 <!doctype html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>ZAL</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ZAL</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="img/icons/icon.png">
-        <!-- Place favicon.ico in the root directory -->
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="img/icons/icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+    <link rel="stylesheet" href="css/scss/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="main-page">
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+<div class="wrapprer">
+    <header class="container-fluid">
+        <div class="header row align-items-center justify-content-between">
+            <a href="" class="header__logo">
+                <svg class="icon icon-logo">
+                    <use xlink:href="img/sprite.svg#logo"/>
+                </svg>
+            </a>
+            <div class="header__nav mx-auto">
+                <a class="nav-item" href=""><span>афиша</span></a>
+                <a class="nav-item" href=""><span>о клубе</span></a>
+                <a class="nav-item" href=""><span>аренда</span></a>
+                <a class="nav-item" href=""><span>архив</span></a>
+                <a class="nav-item" href=""><span>контакты</span></a>
+
+            </div>
+            <div class="header__right row no-gutters align-items-center justify-content-between">
+
+                <a href="tel:78129133563" class="header__right-call ">
+                    <img class="header-icon" src="img/call.svg" alt="">
+                    (812) 913 35 63
+                </a>
+                <span class="header__right-adress">
+                                <img class="header-icon " src="img/loc.svg" alt="">
+                                <span>Наб. Обводного канала, 118</span>
+                            </span>
+                <div class="header__right-search ">
+                    <img src="img/search.svg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="app" class="mp-content container-fluid">
+        <div class="row ">
+            <div class="event-wrapper col px-0">
+                    <a href="" class="event">
+                        <img src="img/test-images/1.jpg" alt="">
+                        <span class="event__info">
+                            <span class="event__info-top">
+                                <p class="event__date">17.12</p>
+                                <h3 class="event__name">бригадный подряд</h3>
+                                <p class="event__desc">Все старые хиты</p>
+                            </span>
+                            <span class="event__btn btn">купить билет</span>
+                        </span>
+                    </a>
+                    <a href="" class="event">
+                        <img src="img/test-images/2.png" alt="">
+                        <span class="event__info">
+                            <span class="event__info-top">
+                                <p class="event__date">17.12</p>
+                                <h3 class="event__name">бригадный подряд</h3>
+                                <p class="event__desc">Все старые хиты</p>
+                            </span>
+                            <span class="event__btn btn">купить билет</span>
+                        </span>
+                    </a>
+                    <a href="" class="event">
+                        <img src="img/test-images/2.png" alt="">
+                        <span class="event__info">
+                            <span class="event__info-top">
+                                <p class="event__date">17.12</p>
+                                <h3 class="event__name">бригадный подряд</h3>
+                                <p class="event__desc">Все старые хиты</p>
+                            </span>
+                            <span class="event__btn btn">купить билет</span>
+                        </span>
+                    </a>
+                    <a href="" class="event">
+                        <img src="img/test-images/1.jpg" alt="">
+                        <span class="event__info">
+                            <span class="event__info-top">
+                                <p class="event__date">17.12</p>
+                                <h3 class="event__name">бригадный подряд</h3>
+                                <p class="event__desc">Все старые хиты</p>
+                            </span>
+                            <span class="event__btn btn">купить билет</span>
+                        </span>
+                    </a>
+                    <a href="" class="event">
+                        <img src="img/test-images/1.jpg" alt="">
+                        <span class="event__info">
+                            <span class="event__info-top">
+                                <p class="event__date">17.12</p>
+                                <h3 class="event__name">бригадный подряд</h3>
+                                <p class="event__desc">Все старые хиты</p>
+                            </span>
+                            <span class="event__btn btn">купить билет</span>
+                        </span>
+                    </a>
+                    <a href="" class="event">
+                        <img src="img/test-images/1.jpg" alt="">
+                        <span class="event__info">
+                            <span class="event__info-top">
+                                <p class="event__date">17.12</p>
+                                <h3 class="event__name">бригадный подряд</h3>
+                                <p class="event__desc">Все старые хиты</p>
+                            </span>
+                            <span class="event__btn btn">купить билет</span>
+                        </span>
+                    </a>
+                    <a href="" class="event">
+                          <img src="img/test-images/1.jpg" alt="">
+                          <span class="event__info">
+                              <span class="event__info-top">
+                                  <p class="event__date">17.12</p>
+                                  <h3 class="event__name">бригадный подряд</h3>
+                                  <p class="event__desc">Все старые хиты</p>
+                              </span>
+                              <span class="event__btn btn">купить билет</span>
+                          </span>
+                      </a>
+                    <a href="" class="event">
+                          <img src="img/test-images/1.jpg" alt="">
+                          <span class="event__info">
+                              <span class="event__info-top">
+                                  <p class="event__date">17.12</p>
+                                  <h3 class="event__name">бригадный подряд</h3>
+                                  <p class="event__desc">Все старые хиты</p>
+                              </span>
+                              <span class="event__btn btn">купить билет</span>
+                          </span>
+                      </a>
+                    <a href="" class="event">
+                          <img src="img/test-images/1.jpg" alt="">
+                          <span class="event__info">
+                              <span class="event__info-top">
+                                  <p class="event__date">17.12</p>
+                                  <h3 class="event__name">бригадный подряд</h3>
+                                  <p class="event__desc">Все старые хиты</p>
+                              </span>
+                              <span class="event__btn btn">купить билет</span>
+                          </span>
+                      </a>
+            </div>
+            <div class="scroll">
+                <div class="scroll__nav">
+                    <div class="scroll-path">
+                        <div class="scroll-path__item scroll-path__item--active"></div>
+                        <div class="scroll-path__item"></div>
+
+                        <svg class="scroll__angle" width="15" height="8" viewBox="0 0 15 8" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Canvas" transform="translate(1350 317)">
+                                <g id="Vector">
+                                    <use xlink:href="#path0_stroke" transform="translate(-1349.5 -316.5)"
+                                         fill="#B9B7B7"/>
+                                </g>
+                            </g>
+                            <defs>
+                                <path id="path0_stroke"
+                                      d="M 7 6.5L 6.65977 6.8664L 7.01285 7.19425L 7.35355 6.85355L 7 6.5ZM -0.340226 0.366397L 6.65977 6.8664L 7.34023 6.1336L 0.340226 -0.366397L -0.340226 0.366397ZM 7.35355 6.85355L 13.8536 0.353553L 13.1464 -0.353553L 6.64645 6.14645L 7.35355 6.85355Z"/>
+                            </defs>
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="scroll__social">
+                    <a href="" class="scroll__social-item">
+                        <svg class="icon icon-vk">
+                            <use xlink:href="img/sprite.svg#vk"/>
+                        </svg>
+                    </a>
+                    <a href="" class="scroll__social-item">
+                        <svg class="icon icon-fb">
+                            <use xlink:href="img/sprite.svg#fb"/>
+                        </svg>
+                    </a>
+                    <a href="" class="scroll__social-item">
+                        <svg class="icon icon-tw">
+                            <use xlink:href="img/sprite.svg#tw"/>
+                        </svg>
+                    </a>
+                    <a href="" class="scroll__social-item">
+                        <svg class="icon icon-in">
+                            <use xlink:href="img/sprite.svg#in"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
 
 
-    </body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="js/main.js"></script>
+
+</body>
 </html>
