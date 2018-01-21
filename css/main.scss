@@ -8,6 +8,7 @@
 html {
     font-size: 16px;
 }
+
 body {
     font-family: museo_1, serif;
     font-weight: normal;
@@ -19,10 +20,69 @@ body {
     color: $color;
     backface-visibility: hidden;
 }
-//.no-gutters.container, .no-gutters.container-fluid {
-//        padding-left: 0;
-//        padding-right: 0;
-//}
+
+[v-cloak] {
+    display: none;
+}
+
+.list-enter-active, .list-leave-active {
+    transition: all 1s;
+}
+
+.list-enter-active:nth-child(even) {
+    transition-delay: .2s;
+
+}
+
+.list-enter:nth-child(odd) {
+    //opacity: 0;
+    transform: translateY(-100%);
+    z-index: 100;
+    position: relative;
+}
+
+.list-enter:nth-child(even) {
+    //opacity: 0;
+    transform: translateX(-100%);
+    z-index: -10;
+}
+
+.list-leave {
+    transform: rotate(-300deg)
+
+}
+
+.list-leave-active {
+    //position: absolute;
+    transition: 1s;
+    transform: rotate(300deg)
+}
+
+.list-item {
+    transition: all 1s;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.list-move {
+    transition: transform 1s;
+}
+
+.list--old {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -22;
+}
+.z-index {
+    z-index: 12 !important;
+    will-change: transform;
+}
 
 @import "scss/common/header";
 @import "scss/main-page/main-page";
+
+@import "scss/media/media";
+

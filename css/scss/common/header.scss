@@ -3,27 +3,28 @@
     padding-right: 0;
     height: 63px;
     position: relative;
-
+    z-index: 5;
+    background-color: $white;
     &-icon {
         margin-right: em(6px);
     }
     &__right {
         font-size: em(12px);
-        max-width: 450px;
+        max-width: 350px;
         position: absolute;
-        right: 0;
+        right: 26px;
         top: 0;
         bottom: 0;
-        width: 30%;
+        width: 24%;
     }
     &__right-call {
         img {
             margin-top: -3px;
         }
-        //white-space: nowrap;
+
     }
     &__right-adress {
-        //white-space: nowrap;
+
         span {
             display: inline-block;
             line-height: 1.8;
@@ -33,18 +34,7 @@
             margin-top: -3px;
         }
     }
-    &__right-search {
-        height: 100%;
-        width: 67px;
-        background: $gray;
-        display: flex;
-        align-items: center;
-        justify-content: center;
 
-        svg {
-            width: 14px;
-        }
-    }
     &__logo {
         padding-left: em(24px);
         position: absolute;
@@ -56,9 +46,7 @@
             margin-top: -2px;
         }
     }
-    &__nav {
-        padding-right: 66px;
-    }
+
 }
 
 

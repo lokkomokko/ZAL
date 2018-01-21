@@ -1,7 +1,141 @@
-main-page {
+.main-page {
     overflow: hidden;
 }
 
+.event {
+    width: calc(100% / 3);
+    //height: 18.2vw;
+    height: calc(100% / 3);
+    color: $white;
+    font-family: museo_3;
+    position: relative;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    img {
+        width: 100%;
+        //display: none;
+    }
+    &__img{
+        display: block;
+        height: 100%;
+        overflow: hidden;
+        width: calc(100% + 2px);
+    }
+    &__bg {
+        @extend %image-opacity;
+        background: $red;
+        backface-visibility: hidden;
+        opacity: 0;
+        right: -2px;
+    }
+    &__info {
+        position: absolute;
+        left: em(30px);
+        bottom: em(30px);
+        line-height: 1.3;
+        will-change: transform;
+        &-top {
+            transform: translateY(em(45px));
+            transition: .2s;
+            transition-delay: .1s;
+            display: block;
+            will-change: transform;
+        }
+    }
+    &-wrapper {
+        height: calc(100vh - 63px);
+        z-index: 1;
+    }
+    &__btn {
+        margin-top: em(10px);
+        transition: .2s;
+        opacity: 0;
+        will-change: transform;
+    }
+    &__name {
+        font-size: em(28px);
+        text-transform: uppercase;
+    }
+    &__desc {
+        font-family: museo_1;
+        font-size: em(12px);
+    }
+    img {
+        @extend %img;
+    }
+    &:before {
+        @extend %image-opacity;
+        background: rgba(255, 255, 255, 0.7);
+        opacity: 0;
+        right: -2px;
+        transition: .2s;
+    }
+
+    &:hover {
+        color: $color;
+        .event__info-top {
+            transform: translateY(0);
+            transition-delay: 0s;
+        }
+        .event__btn {
+            transition-delay: .2s;
+            opacity: 1;
+        }
+        &:before {
+            opacity: 1;
+        }
+    }
+}
+
+@keyframes anim-bottom {
+    0% {
+        transform: scaleY(0);
+        transform-origin: 0 0;
+    }
+    50% {
+        transform: scaleY(1);
+        transform-origin: 0 0;
+    }
+    75% {
+            transform: scaleY(.8);
+            transform-origin: 0 100%;
+    }
+    100%{
+        transform-origin:0 100%;
+        transform: scaleY(0)
+    }
+}
+@keyframes anim-top {
+    0% {
+        transform: scaleY(0);
+        transform-origin: 0 100%;
+    }
+    50% {
+        transform: scaleY(1);
+        transform-origin: 0 100%;
+    }
+    75% {
+            transform: scaleY(.8);
+            transform-origin: 0 0;
+    }
+    100%{
+        transform-origin:0 0;
+        transform: scaleY(0)
+    }
+}
+@keyframes active-field {
+    0% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: rgba(237, 36, 39, .2);
+    }
+    100% {
+        background-color: transparent;
+
+    }
+}
 .scroll {
     width: 67px;
     height: calc(100vh - 63px);
@@ -37,6 +171,7 @@ main-page {
             transition: .2s;
             cursor: pointer;
             margin-bottom: 18px;
+            position: relative;
             &:hover {
                 background: rgba(196, 196, 196, 0.3);
                 &:before {
@@ -50,6 +185,28 @@ main-page {
                 background: #B9B7B7;
                 display: block;
                 transition: .2s;
+            }
+            &-line {
+                content: '';
+                position: absolute;
+                left: 14px;
+                width: 1px;
+                height: 43px;
+                transform: scaleY(0);
+                display: block;
+                background-color: $red;
+            }
+            &-animate-bottom {
+                .scroll-path__item-line {
+                    top: -30px;
+                    animation: anim-bottom 1s linear;
+                }
+            }
+            &-animate-top {
+                .scroll-path__item-line {
+                    bottom: -30px;
+                    animation: anim-top 1s linear;
+                }
             }
             //spare css angle
             //&:after {
@@ -65,38 +222,26 @@ main-page {
             //    transform: rotate(120deg);
             //}
             &--active {
+                animation: active-field 1s linear;
+                animation-delay: .5s;
                 &:before {
                     width: 7px;
                     height: 7px;
                     background-color: $red;
+                    transition-delay: .5s;
+                    transition-duration: .2s;
                 }
             }
         }
     }
-    &__social {
-        background: #E8E8E8;
-        height: 33.3%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-sizing: border-box;
-        padding: 50% 0;
-        &-item {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            transition: .2s;
-            justify-content: center;
-            width: 100%;
-            &:hover {
-                opacity: .8;
-            }
-        }
-    }
+
     &__angle {
         position: absolute;
         left: calc(50% - 8px);
         bottom: 56px;
     }
 }
+
+
+
 
