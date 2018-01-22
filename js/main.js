@@ -55,11 +55,12 @@ $(document).ready(function () {
                         var tl = new TimelineMax({
                             paused: true,
                             onComplete: function () {
-                                TweenMax.to(old_list, .5, {
-                                    'opacity': 0, onComplete: function () {
-                                        old_list.remove()
-                                    }
-                                })
+                                //     TweenMax.to(old_list, .5, {
+                                //         'opacity': 0, onComplete: function () {
+                                //             old_list.remove()
+                                //         }
+                                //     })
+                                old_list.remove()
                             }
                         });
 
@@ -117,9 +118,12 @@ $(document).ready(function () {
 
                             tl.add(TweenMax.set(item.find('.event__bg'), {'background-color': color}));
                             tl.add('scene')
-
+                                .to('.list--old', .5, {opacity: 0, ease: Power1.easeIn}, .5)
                                 .from(item.find('.event__img'), gp.duration, settings, time + gp.delay)
-                                .from(item.find('.event__bg'), gp.duration + .1, {'opacity': .8, ease: Power1.easeIn}, time + gp.delay)
+                                .from(item.find('.event__bg'), gp.duration + .1, {
+                                    'opacity': .8,
+                                    ease: Power1.easeIn
+                                }, time + gp.delay)
                                 .from(item.find('.event__info'), gp.duration, {'opacity': 0}, (time + gp.delay) + .7)
                         }
 
@@ -183,7 +187,7 @@ $(document).ready(function () {
 
                     $('.scroll-path__item').removeClass('scroll-path__item--active');
 
-                    var need_navitem = $('.scroll-path__item[data-index='+(this.show_events.index)+']');
+                    var need_navitem = $('.scroll-path__item[data-index=' + (this.show_events.index) + ']');
                     need_navitem.addClass('scroll-path__item--active');
 
                     // console.log(need_navitem.data('index'));
@@ -396,3 +400,45 @@ $(document).ready(function () {
     }
 });
 
+
+if ($('#map').length >= 1) {
+    ymaps.ready(function () {
+        var myMap = new ymaps.Map('map', {
+                center: [59.906660, 30.307461],
+                zoom: 16,
+                controls: []
+            }, {
+                searchControlProvider: 'yandex#search'
+            }),
+
+            // Создаём макет содержимого.
+            MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+            ),
+
+            myPlacemark = new ymaps.Placemark([59.906681, 30.307429], {
+                hintContent: 'Клуб зал ожидания',
+                balloonContent: '197136 Санкт-Петербург, улица Рентгена, 7'
+                }
+            //  {
+            //     // Опции.
+            //     // Необходимо указать данный тип макета.
+            //     iconLayout: 'default#image',
+            //     // Своё изображение иконки метки.
+            //     iconImageHref: 'img/bable_shadow.png',
+            //     // Размеры метки.
+            //     iconImageSize: [49, 51],
+            //     // Смещение левого верхнего угла иконки относительно
+            //     // её "ножки" (точки привязки).
+            //     iconImageOffset: [-5, -38]
+            // }
+            )
+
+
+        myMap.behaviors.disable('scrollZoom')
+        myMap.controls.add(new ymaps.control.ZoomControl({options: {position: {left: 10, top: 250}}}));
+        myMap.geoObjects
+            .add(myPlacemark)
+    });
+
+}

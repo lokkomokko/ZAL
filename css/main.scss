@@ -1,5 +1,6 @@
 @import "scss/normalize.css";
-@import "scss/grid.css";
+//@import "scss/grid.css";
+@import "scss/bootstrap.css";
 @import "scss/settings/_settings";
 @import "scss/fonts/fonts";
 @import "scss/sprite/svg-sprite";
@@ -7,6 +8,15 @@
 
 html {
     font-size: 16px;
+}
+
+a {
+    color: inherit;
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+
 }
 
 body {
@@ -21,68 +31,11 @@ body {
     backface-visibility: hidden;
 }
 
-[v-cloak] {
-    display: none;
-}
-
-.list-enter-active, .list-leave-active {
-    transition: all 1s;
-}
-
-.list-enter-active:nth-child(even) {
-    transition-delay: .2s;
-
-}
-
-.list-enter:nth-child(odd) {
-    //opacity: 0;
-    transform: translateY(-100%);
-    z-index: 100;
-    position: relative;
-}
-
-.list-enter:nth-child(even) {
-    //opacity: 0;
-    transform: translateX(-100%);
-    z-index: -10;
-}
-
-.list-leave {
-    transform: rotate(-300deg)
-
-}
-
-.list-leave-active {
-    //position: absolute;
-    transition: 1s;
-    transform: rotate(300deg)
-}
-
-.list-item {
-    transition: all 1s;
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.list-move {
-    transition: transform 1s;
-}
-
-.list--old {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -22;
-}
-.z-index {
-    z-index: 12 !important;
-    will-change: transform;
-}
-
 @import "scss/common/header";
 @import "scss/main-page/main-page";
+@import "scss/event-page/event-page";
+@import "scss/footer/footer";
+
 
 @import "scss/media/media";
 

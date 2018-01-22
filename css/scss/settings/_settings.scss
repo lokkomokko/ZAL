@@ -3,7 +3,7 @@
 $color: #000;
 $red: #EE2324;
 $white: #fff;
-$gray: #E8E8E8;
+$gray: #E8F0F1;
 
 // mixins
 %image-opacity {
@@ -25,7 +25,6 @@ $gray: #E8E8E8;
 //px to em
 
 $browser-context: 16;
-
 @function em($pixels, $context: $browser-context) {
     @if (unitless($pixels)) {
         $pixels: $pixels * 1px;
@@ -36,4 +35,11 @@ $browser-context: 16;
     }
 
     @return $pixels / $context * 1em;
+}
+
+
+@function rem($size) {
+  $remSize: $size / $browser-context;
+//Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
 }

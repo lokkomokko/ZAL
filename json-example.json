@@ -1,215 +1,214 @@
     {
-        "events": [
-            {
-                "name": "Бригадный подряд",
+        "events": [{
+                "name": "Звуки улиц Питера",
                 "date": "17.10",
-                "desc": "Все старые хиты",
+                "desc": "Гала-концерт проекта 'Звуки улиц Питера'",
                 "img": "img/test-images/1.jpg",
                 "link": ""
             },
             {
-                "name": "Бригадный подряд 2",
+                "name": "Satyricon",
                 "date": "17.01",
-                "desc": "Все старые хиты",
-                "img": "img/test-images/3.png",
+                "desc": "",
+                "img": "img/test-images/2.jpg",
                 "link": ""
             },
             {
-                "name": "Бригадный подряд 3",
+                "name": "Rickey F",
                 "date": "12.10",
-                "desc": "Все старые хиты",
-                "img": "img/test-images/4.png",
+                "desc": "",
+                "img": "img/test-images/3.jpg",
                 "link": ""
             },
             {
-                "name": "Бригадный подряд 4",
+                "name": "SIDxRAM",
                 "date": "19.10",
-                "desc": "Все старые хиты",
-                "img": "img/test-images/5.png",
+                "desc": "",
+                "img": "img/test-images/4.jpg",
                 "link": ""
             },
             {
-                "name": "Бригадный подряд 5",
+                "name": "Добраночь",
                 "date": "14.10",
-                "desc": "Все старые хиты",
-                "img": "img/test-images/6.png",
+                "desc": "XX Лет",
+                "img": "img/test-images/5.jpg",
                 "link": ""
             },
             {
-                "name": "Бригадный подряд 6",
+                "name": "Falling in Reverse",
                 "date": "15.10",
-                "desc": "Все старые хиты",
-                "img": "img/test-images/7.png",
+                "desc": "новый альбом 'Coming Home'",
+                "img": "img/test-images/6.jpg",
                 "link": ""
             },
             {
-                "name": "Бригадный подряд 7",
+                "name": "Fox In Oil",
                 "date": "15.10",
-                "desc": "Все старые хиты",
-                "img": "img/test-images/8.png",
+                "desc": "",
+                "img": "img/test-images/7.jpg",
                 "link": ""
             },
             {
-                "name": "Бригадный подряд 8",
+                "name": "Lacrimas Profundere",
                 "date": "15.10",
-                "desc": "Все старые хиты",
-                "img": "img/test-images/9.png",
+                "desc": "",
+                "img": "img/test-images/8.jpg",
                 "link": ""
             },
             {
-                "name": "Бригадный подряд 9",
+                "name": "Myrkur",
                 "date": "15.10",
-                "desc": "Все старые хиты",
-                "img": "img/test-images/4.png",
+                "desc": "",
+                "img": "img/test-images/9.jpg",
                 "link": ""
             },
             {
-                "name": "тролль гнет ель",
+                "name": "Masterplan",
                 "date": "11.10",
-                "desc": "Все старые хиты",
-                "img": "img/test-images/3.png",
+                "desc": "",
+                "img": "img/test-images/10.jpg",
                 "link": ""
             },
             {
-                "name": "тролль гнет ель 2",
+                "name": "KURT COBAIN BIRTHDAY",
                 "date": "11.15",
-                "desc": "Все Все старые хиты",
-                "img": "img/test-images/2.png",
+                "desc": "ГЛАВНОЕ ГРАНЖ-СОБЫТИЕ ГОДА",
+                "img": "img/test-images/11.jpg",
                 "link": ""
             },
-                        {
-                            "name": "Бригадный подряд 3",
-                            "date": "12.10",
-                            "desc": "Все старые хиты",
-                            "img": "img/test-images/1.jpg",
-                            "link": ""
-                        },
-                        {
-                            "name": "Бригадный подряд 4",
-                            "date": "19.10",
-                            "desc": "Все старые хиты",
-                            "img": "img/test-images/7.png",
-                            "link": ""
-                        },
-                        {
-                            "name": "Бригадный подряд 5",
-                            "date": "14.10",
-                            "desc": "Все старые хиты",
-                            "img": "img/test-images/9.png",
-                            "link": ""
-                        },
-                        {
-                            "name": "Бригадный подряд 6",
-                            "date": "15.10",
-                            "desc": "Все старые хиты",
-                            "img": "img/test-images/6.png",
-                            "link": ""
-                        },
-                        {
-                            "name": "Бригадный подряд 7",
-                            "date": "15.10",
-                            "desc": "Все старые хиты",
-                            "img": "img/test-images/1.jpg",
-                            "link": ""
-                        },
-                        {
-                            "name": "Бригадный подряд 8",
-                            "date": "15.10",
-                            "desc": "Все старые хиты",
-                            "img": "img/test-images/5.png",
-                            "link": ""
-                        },
-                        {
-                            "name": "Бригадный подряд 9",
-                            "date": "15.10",
-                            "desc": "Все старые хиты",
-                            "img": "img/test-images/3.png",
-                            "link": ""
-                        },
-                        {
-                            "name": "тролль гнет ель",
-                            "date": "11.10",
-                            "desc": "Все старые хиты",
-                            "img": "img/test-images/4.png",
-                            "link": ""
-                        },
-                        {
-                            "name": "тролль гнет ель 2",
-                            "date": "11.15",
-                            "desc": "Все Все старые хиты",
-                            "img": "img/test-images/6.png",
-                            "link": ""
-                        },
-                                    {
-                                        "name": "Бригадный подряд 6",
-                                        "date": "15.10",
-                                        "desc": "Все старые хиты",
-                                        "img": "img/test-images/7.png",
-                                        "link": ""
-                                    },
-                                    {
-                                        "name": "Бригадный подряд 7",
-                                        "date": "15.10",
-                                        "desc": "Все старые хиты",
-                                        "img": "img/test-images/8.png",
-                                        "link": ""
-                                    },
-                                    {
-                                        "name": "Бригадный подряд 8",
-                                        "date": "15.10",
-                                        "desc": "Все старые хиты",
-                                        "img": "img/test-images/9.png",
-                                        "link": ""
-                                    },
-                                    {
-                                        "name": "Бригадный подряд 9",
-                                        "date": "15.10",
-                                        "desc": "Все старые хиты",
-                                        "img": "img/test-images/4.png",
-                                        "link": ""
-                                    },
-                                    {
-                                        "name": "тролль гнет ель",
-                                        "date": "11.10",
-                                        "desc": "Все старые хиты",
-                                        "img": "img/test-images/3.png",
-                                        "link": ""
-                                    },
-                                    {
-                                        "name": "тролль гнет ель 2",
-                                        "date": "11.15",
-                                        "desc": "Все Все старые хиты",
-                                        "img": "img/test-images/2.png",
-                                        "link": ""
-                                    },
-                                                {
-                                                    "name": "Бригадный подряд 3",
-                                                    "date": "12.10",
-                                                    "desc": "Все старые хиты",
-                                                    "img": "img/test-images/1.jpg",
-                                                    "link": ""
-                                                },
-                                                                                   {
-                                                                                        "name": "тролль гнет ель",
-                                                                                        "date": "11.10",
-                                                                                        "desc": "Все старые хиты",
-                                                                                        "img": "img/test-images/3.png",
-                                                                                        "link": ""
-                                                                                    },
-                                                                                    {
-                                                                                        "name": "тролль гнет ель 2",
-                                                                                        "date": "11.15",
-                                                                                        "desc": "Все Все старые хиты",
-                                                                                        "img": "img/test-images/2.png",
-                                                                                        "link": ""
-                                                                                    },
-                                                                                                {
-                                                                                                    "name": "Бригадный подряд 3",
-                                                                                                    "date": "12.10",
-                                                                                                    "desc": "Все старые хиты",
-                                                                                                    "img": "img/test-images/1.jpg",
-                                                                                                    "link": ""
-                                                                                                }
+            {
+                "name": "Рвать на битах",
+                "date": "12.10",
+                "desc": "ЭКСТРЕМАЛЬНЫЙ FLOW",
+                "img": "img/test-images/32.jpg",
+                "link": ""
+            },
+            {
+                "name": "EIMIC + OLIGARKH + SPTNK",
+                "date": "19.10",
+                "desc": "",
+                "img": "img/test-images/12.jpg",
+                "link": ""
+            },
+            {
+                "name": "LaScala",
+                "date": "14.10",
+                "desc": "",
+                "img": "img/test-images/13.jpg",
+                "link": ""
+            },
+            {
+                "name": "Tekashi69",
+                "date": "15.10",
+                "desc": "",
+                "img": "img/test-images/14.jpg",
+                "link": ""
+            },
+            {
+                "name": "Cradle of filth",
+                "date": "15.10",
+                "desc": "потрясающе 'ужасные'",
+                "img": "img/test-images/15.jpg",
+                "link": ""
+            },
+            {
+                "name": "Guru Groove Foundation",
+                "date": "15.10",
+                "desc": "",
+                "img": "img/test-images/16.jpg",
+                "link": ""
+            },
+            {
+                "name": "Wintersun",
+                "date": "12.05",
+                "desc": "",
+                "img": "img/test-images/17.jpg",
+                "link": ""
+            },
+            {
+                "name": "Billy Milligan",
+                "date": "11.10",
+                "desc": "",
+                "img": "img/test-images/18.jpg",
+                "link": ""
+            },
+            {
+                "name": "While She Sleeps",
+                "date": "11.15",
+                "desc": "SPIKA Concert Agency",
+                "img": "img/test-images/19.jpg",
+                "link": ""
+            },
+            {
+                "name": "JEEMBO x TVETH",
+                "date": "15.10",
+                "desc": "",
+                "img": "img/test-images/20.jpg",
+                "link": ""
+            },
+            {
+                "name": "Черный Обелиск",
+                "date": "15.10",
+                "desc": "",
+                "img": "img/test-images/21.jpg",
+                "link": ""
+            },
+            {
+                "name": "Moonspell",
+                "date": "15.10",
+                "desc": "",
+                "img": "img/test-images/22.jpg",
+                "link": ""
+            },
+            {
+                "name": "Telefon Tel Aviv",
+                "date": "15.10",
+                "desc": "",
+                "img": "img/test-images/23.jpg",
+                "link": ""
+            },
+            {
+                "name": "CyHra",
+                "date": "11.10",
+                "desc": "Проект -ex участников Amaranthe, In Flames, HammerFall, Annihilator & Shining",
+                "img": "img/test-images/24.jpg",
+                "link": ""
+            },
+            {
+                "name": "Of Mice & Men",
+                "date": "11.15",
+                "desc": "",
+                "img": "img/test-images/25.jpg",
+                "link": ""
+            },
+            {
+                "name": "Desiigner",
+                "date": "12.10",
+                "desc": "",
+                "img": "img/test-images/26.jpg",
+                "link": ""
+            },
+            {
+                "name": "Abyssphere",
+                "date": "11.10",
+                "desc": "",
+                "img": "img/test-images/27.jpg",
+                "link": ""
+            },
+            {
+                "name": "Пасош",
+                "date": "11.15",
+                "desc": "Все ",
+                "img": "img/test-images/30.jpg",
+                "link": ""
+            },
+            {
+                "name": "Therion",
+                "date": "12.10",
+                "desc": "Рок-опера «Beloved Antichrist»",
+                "img": "img/test-images/29.jpg",
+                "link": ""
+            }
 
         ]
 

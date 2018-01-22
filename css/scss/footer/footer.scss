@@ -1,0 +1,43 @@
+.footer {
+    margin-top: auto;
+    background: #0D0D0D;
+    color: $white;
+    &__map {
+        background-color: #fff;
+        padding: 0;
+    }
+    &__bottom {
+        padding: em(40px) 0 em(50px);
+    }
+    &__adress {
+        &-wrap {
+            padding: em(33px) 0;
+        }
+        &-title {
+            font-size: em(14px);
+            text-transform: uppercase;
+            font-family: museo_2;
+            display: inline-block;
+            margin-bottom: rem(22);
+        }
+    }
+    &__links {
+        margin-bottom: em(50px);
+        &-item {
+            font-size: em(12px);
+            margin: 0 5px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__name {
+        font-size: em(12px);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+}
+#map{
+    height: 341px;
+    filter: grayscale(100%);
+}

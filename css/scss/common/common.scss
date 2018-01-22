@@ -1,7 +1,13 @@
 //блок концерта
 .wrapper {
     width: calc(100% - 63px);
-    display: inline-block;
+    display: inline-flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+}
+.container-fluid {
+    width: 100%;
 }
 
 .sidebar {
@@ -23,13 +29,21 @@
     }
 
     &__social {
-        background: #E8E8E8;
+        background: $gray;
         height: 33.3%;
         display: flex;
         flex-direction: column;
         align-items: center;
         box-sizing: border-box;
         padding: 50% 0;
+        &--event {
+            padding: 26px 0;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            height: 33.8%;
+            width: 63px;
+        }
         &-item {
             flex: 1;
             display: flex;
@@ -55,4 +69,12 @@
     display: inline-block;
     text-transform: uppercase;
     font-family: museo_3;
+    transition: .2s;
+    cursor: pointer;
+    border: 2px $red solid;
+    &:hover {
+        background-color: transparent;
+
+        color: $red;
+    }
 }
