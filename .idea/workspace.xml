@@ -2,67 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5295687d-b035-46f8-b501-fa57f32b3fed" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/scss/bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/scss/footer/footer.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/event-page.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/event-sprite.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/10.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/11.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/12.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/13.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/14.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/15.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/16.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/17.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/18.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/19.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/20.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/21.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/22.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/23.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/24.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/25.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/26.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/27.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/29.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/30.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/31.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/32.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/33.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/6.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/7.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/8.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/9.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/e1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/test-images/e2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
-      <change beforePath="$PROJECT_DIR$/css/main.scss" afterPath="$PROJECT_DIR$/css/main.scss" />
-      <change beforePath="$PROJECT_DIR$/css/scss/common/common.scss" afterPath="$PROJECT_DIR$/css/scss/common/common.scss" />
-      <change beforePath="$PROJECT_DIR$/css/scss/event-page/event-page.scss" afterPath="$PROJECT_DIR$/css/scss/event-page/event-page.scss" />
-      <change beforePath="$PROJECT_DIR$/css/scss/grid.css" afterPath="$PROJECT_DIR$/css/scss/grid.css" />
-      <change beforePath="$PROJECT_DIR$/css/scss/main-page/main-page.scss" afterPath="$PROJECT_DIR$/css/scss/main-page/main-page.scss" />
-      <change beforePath="$PROJECT_DIR$/css/scss/normalize.css" afterPath="$PROJECT_DIR$/css/scss/normalize.css" />
-      <change beforePath="$PROJECT_DIR$/css/scss/settings/_settings.scss" afterPath="$PROJECT_DIR$/css/scss/settings/_settings.scss" />
-      <change beforePath="$PROJECT_DIR$/css/scss/sprite/svg-sprite.scss" afterPath="$PROJECT_DIR$/css/scss/sprite/svg-sprite.scss" />
-      <change beforePath="$PROJECT_DIR$/img/sprite.svg" afterPath="$PROJECT_DIR$/img/sprite.svg" />
-      <change beforePath="$PROJECT_DIR$/img/test-images/1.jpg" afterPath="$PROJECT_DIR$/img/test-images/1.jpg" />
-      <change beforePath="$PROJECT_DIR$/img/test-images/2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/test-images/3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/test-images/4.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/test-images/5.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/test-images/6.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/test-images/7.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/test-images/8.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/test-images/9.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change beforePath="$PROJECT_DIR$/json-example.json" afterPath="$PROJECT_DIR$/json-example.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -99,7 +40,7 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
+            <state relative-caret-position="7542">
               <caret line="419" column="47" lean-forward="false" selection-start-line="419" selection-start-column="47" selection-end-line="419" selection-end-column="47" />
               <folding>
                 <marker date="1516639336897" expanded="true" signature="16910:16944" ph="..." />
@@ -111,8 +52,8 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/scss/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-306">
-              <caret line="2635" column="0" lean-forward="true" selection-start-line="2635" selection-start-column="0" selection-end-line="2635" selection-end-column="0" />
+            <state relative-caret-position="47430">
+              <caret line="2635" column="0" lean-forward="false" selection-start-line="2635" selection-start-column="0" selection-end-line="2635" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -121,18 +62,28 @@
       <file leaf-file-name="event-page.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/event-page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="322" column="0" lean-forward="true" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
+            <state relative-caret-position="5796">
+              <caret line="322" column="0" lean-forward="false" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footer.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/scss/footer/footer.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+            <state relative-caret-position="348">
+              <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -152,7 +103,7 @@
       <file leaf-file-name="svg-sprite.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/scss/sprite/svg-sprite.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
+            <state relative-caret-position="900">
               <caret line="50" column="17" lean-forward="false" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
               <folding />
             </state>
@@ -164,16 +115,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main-page.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/scss/main-page/main-page.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="165" column="13" lean-forward="false" selection-start-line="165" selection-start-column="13" selection-end-line="165" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -227,6 +168,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -254,6 +200,7 @@
         <option value="$PROJECT_DIR$/css/scss/event-page/event-page.scss" />
         <option value="$PROJECT_DIR$/css/scss/common/common.scss" />
         <option value="$PROJECT_DIR$/css/scss/footer/footer.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -307,8 +254,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -461,7 +408,8 @@
       <workItem from="1516339765098" duration="37807000" />
       <workItem from="1516437902386" duration="42357000" />
       <workItem from="1516523960943" duration="30531000" />
-      <workItem from="1516612529792" duration="22362000" />
+      <workItem from="1516612529792" duration="22559000" />
+      <workItem from="1516640557744" duration="83000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1516268747901</created>
@@ -484,11 +432,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516531692220</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit">
+      <created>1516640180057</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1516640180057</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193133000" />
+    <option name="totallyTimeSpent" value="193413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1368" height="780" extended-state="6" />
@@ -554,7 +509,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1516639336897" expanded="true" signature="16910:16944" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -613,7 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/404.html" />
     <entry file="file://$PROJECT_DIR$/doc/css.md" />
     <entry file="file://$PROJECT_DIR$/doc/js.md" />
@@ -684,6 +640,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="82" column="42" lean-forward="false" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -694,6 +651,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="5" column="856" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="49386" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -701,6 +659,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -715,7 +674,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/scss/main-page/main-page.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
+        <state relative-caret-position="2970">
           <caret line="165" column="13" lean-forward="false" selection-start-line="165" selection-start-column="13" selection-end-line="165" selection-end-column="13" />
           <folding />
         </state>
@@ -723,15 +682,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/scss/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="2635" column="0" lean-forward="true" selection-start-line="2635" selection-start-column="0" selection-end-line="2635" selection-end-column="0" />
+        <state relative-caret-position="47430">
+          <caret line="2635" column="0" lean-forward="false" selection-start-line="2635" selection-start-column="0" selection-end-line="2635" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/scss/sprite/svg-sprite.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
+        <state relative-caret-position="900">
           <caret line="50" column="17" lean-forward="false" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
           <folding />
         </state>
@@ -739,7 +698,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
+        <state relative-caret-position="7542">
           <caret line="419" column="47" lean-forward="false" selection-start-line="419" selection-start-column="47" selection-end-line="419" selection-end-column="47" />
           <folding>
             <marker date="1516639336897" expanded="true" signature="16910:16944" ph="..." />
@@ -757,8 +716,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/event-page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="322" column="0" lean-forward="true" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
+        <state relative-caret-position="5796">
+          <caret line="322" column="0" lean-forward="false" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -790,8 +749,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/scss/footer/footer.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        <state relative-caret-position="348">
+          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
