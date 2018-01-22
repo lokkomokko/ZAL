@@ -36,6 +36,9 @@
         letter-spacing: 0.12em;
         text-transform: uppercase;
     }
+    .nav-item:hover {
+        background: #0D0D0D;
+    }
 }
 #map{
     height: 341px;
