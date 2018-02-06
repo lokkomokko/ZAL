@@ -2,8 +2,11 @@
     padding-left: 0;
     padding-right: 0;
     height: 63px;
-    position: relative;
+    position: fixed;
     z-index: 5;
+    left: 0;
+    right: 63px;
+    top: 0;
     background-color: $white;
     &-icon {
         margin-right: em(6px);
@@ -12,7 +15,7 @@
         font-size: em(12px);
         max-width: 350px;
         position: absolute;
-        right: 26px;
+        right: 40px;
         top: 0;
         bottom: 0;
         width: 24%;
@@ -21,34 +24,96 @@
         img {
             margin-top: -3px;
         }
-
+    }
+    &__nav {
+        &-social {
+            display: none;
+        }
+        .header__right-adress {
+            display: none;
+        }
+    }
+    &__mobile-icon {
+        display: none;
     }
     &__right-adress {
 
         span {
             display: inline-block;
             line-height: 1.8;
-            border-bottom: 1px solid $red;
+            border-bottom: 1px solid #EE2324;
+            cursor: pointer;
+        }
+        &:hover {
+            span {
+                color: $red;
+                border-bottom-color: transparent !important;
+            }
         }
         img {
             margin-top: -3px;
         }
+        &--disable {
+            span {
+                border-bottom-color: transparent;
+            }
+            &:hover {
+                span {
+                    color: inherit;
+                    cursor: default;
+                }
+            }
+        }
     }
 
     &__logo {
-        padding-left: em(24px);
+        padding-left: em(39px);
         position: absolute;
         left: 0;
         top: 0;
         bottom: 0;
         svg {
             width: 126px;
+            height: 100%;
             margin-top: -2px;
+        }
+    }
+    &-search {
+        &__wrap {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: -26px;
+            background-color: $gray;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            padding-left: 14px;
+            transition: .4s;
+            transform-origin: 100% 0;
+            z-index: 11;
+            &--hide {
+                transform: scaleX(0);
+                pointer-events: none;
+            }
+            form {
+                width: 100%;
+            }
+            input {
+                background-color: #fff;
+                color: rgba(0, 0, 0, .3);
+                height: 40px;
+                width: 100%;
+                padding-left: 14px;
+                &::placeholder {
+                    color: rgba(0, 0, 0, .3);
+                }
+            }
         }
     }
 
 }
-
 
 //header nav link
 .nav-item {
@@ -59,21 +124,21 @@
     cursor: pointer;
     transition: .2s;
     text-align: center;
-    padding: 0 8px 0;
+    padding: 2px 8px 0;
     margin: 0 em(7px);
 
     display: inline-block;
     span {
         border-bottom: 1px solid $red;
         display: inline-block;
-        padding: 5px 0 3px;
+        padding: -1px 0 3px;
 
     }
     &:hover {
         background-color: $color;
         color: $white;
         span {
-            border-bottom: #000000;
+            border-bottom-color: #000000;
         }
     }
 }

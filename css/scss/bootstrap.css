@@ -57,10 +57,10 @@ a {
   -webkit-text-decoration-skip: objects;
 }
 
-a:active,
-a:hover {
-  outline-width: 0;
-}
+/*a:active,*/
+/*a:hover {*/
+  /*outline-width: 0;*/
+/*}*/
 
 abbr[title] {
   border-bottom: none;
@@ -356,7 +356,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 abbr[title],
@@ -400,11 +399,6 @@ blockquote {
 a {
   color: #0275d8;
   text-decoration: none;
-}
-
-a:focus, a:hover {
-  color: #014c8c;
-  text-decoration: underline;
 }
 
 a:not([href]):not([tabindex]) {

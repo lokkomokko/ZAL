@@ -29,13 +29,14 @@ body {
     overflow-x: hidden;
     color: $color;
     backface-visibility: hidden;
+    min-width: 320px;
 }
 
 @import "scss/common/header";
 @import "scss/main-page/main-page";
 @import "scss/event-page/event-page";
 @import "scss/footer/footer";
-
+@import "scss/archive/archive";
 
 @import "scss/media/media";
 

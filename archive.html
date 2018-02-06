@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ZAL</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="img/icons/icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"-->
+    <!--integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="css/main.css">
+    <meta property="og:title" content="SIDxRAM">
+    <meta property="og:description" content="Все хиты">
+    <meta property="og:image" content="https://glavclub.com/images/artists/backgrounds/733.jpg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://www.clubzal.ru">
+</head>
+<body>
+<div class="wrapper">
+    <header class="container-fluid">
+        <div class="header row align-items-center justify-content-between">
+            <a href="" class="header__logo">
+                <svg class="icon icon-logo">
+                    <use xlink:href="img/sprite.svg#logo"/>
+                </svg>
+            </a>
+            <div class="header__nav mx-auto">
+                <a class="nav-item" href=""><span>афиша</span></a>
+                <a class="nav-item" href=""><span>о клубе</span></a>
+                <a class="nav-item" href=""><span>аренда</span></a>
+                <a class="nav-item" href=""><span>архив</span></a>
+                <a class="nav-item" href=""><span>контакты</span></a>
+            </div>
+            <div class="header__right row no-gutters align-items-center justify-content-between">
+                <a href="tel:78129133563" class="header__right-call ">
+                    <img class="header-icon" src="img/call.svg" alt="">
+                    (812) 913 35 63
+                </a>
+                <span class="header__right-adress">
+                  <img class="header-icon " src="img/loc.svg" alt="">
+                  <span>Наб. Обводного канала, 118</span>
+                  </span>
+                <div class="header-search__wrap header-search__wrap--hide">
+                    <form action="">
+                        <input type="text" placeholder="Поиск">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="ar-content container-fluid">
+        <div class="row">
+            <h1 class="title col-12 text-center">архив</h1>
+        </div>
+        <div class="ar-wrapper row ">
+            <div class="col-12 no-gutters">
+                <div class="ar__year-wrapper ar__year-wrapper--empty row" data-year="2017"></div>
+                <div class="ar__year-wrapper ar__year-wrapper--empty row" data-year="2016"></div>
+                <div class="ar__year-wrapper ar__year-wrapper--empty row" data-year="2015"></div>
+                <div class="ar__year-wrapper ar__year-wrapper--empty row" data-year="2014"></div>
+                <div class="ar__year-wrapper ar__year-wrapper--empty row" data-year="2013"></div>
+                <div class="ar__year-wrapper ar__year-wrapper--empty row" data-year="2012"></div>
+                <div class="ar__year-wrapper ar__year-wrapper--empty row" data-year="2011"></div>
+                <div class="ar__year-wrapper ar__year-wrapper--empty row" data-year="2010"></div>
+                <div class="ar__year-wrapper ar__year-wrapper--empty row" data-year="2009"></div>
+                <div class="ar__year-wrapper ar__year-wrapper--empty row" data-year="2008"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer container-fluid">
+        <div class="row">
+            <div class="footer__adress-wrap col-12 text-center">
+                  <span class="footer__adress-title">
+                  Адрес клуба ZAL:
+                  </span>
+                <br>
+                <div class="footer__adress">
+                    Санкт-Петербург <br>
+                    Наб. Обводного канала, 118
+                </div>
+            </div>
+            <div class="footer__map col-12">
+                <div id="map"></div>
+            </div>
+            <div class="footer__bottom col-12 text-center">
+                <nav class="footer__nav">
+                    <a class="nav-item" href=""><span>афиша</span></a>
+                    <a class="nav-item" href=""><span>о клубе</span></a>
+                    <a class="nav-item" href=""><span>аренда</span></a>
+                    <a class="nav-item" href=""><span>архив</span></a>
+                    <a class="nav-item" href=""><span>контакты</span></a>
+                </nav>
+                <br>
+                <div class="footer__links">
+                    <a href="" class="footer__links-item">Аккредитация</a>
+                    <a href="" class="footer__links-item">Правила посещения клуба</a>
+                    <a href="" class="footer__links-item">Схема зала</a>
+                    <a href="" class="footer__links-item">Корпоративы</a>
+                    <a href="" class="footer__links-item">Райдер</a>
+                    <a href="" class="footer__links-item">Фотоотчеты</a>
+                    <a href="" class="footer__links-item">Партнеры</a>
+                </div>
+                <div class="footer__name">
+                    ZAL © 2018
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<div class="sidebar">
+    <div class="sidebar__search ">
+        <img src="img/search.svg" alt="">
+    </div>
+    <div class="scroll">
+        <div class="scroll__nav scroll__nav--archive">
+            <div class="scroll-path__item-dots scroll-path__item-dots--prev">...</div>
+            <div class="scroll-path">
+                <div class="scroll-path__inner">
+                    <div class="scroll-path__item scroll-path__item--active scroll-path__item--archive"
+                         data-year="2017">2017
+                    </div>
+                    <div class="scroll-path__item scroll-path__item--archive" data-year="2016">2016</div>
+                    <div class="scroll-path__item scroll-path__item--archive" data-year="2015">2015</div>
+                    <div class="scroll-path__item scroll-path__item--archive" data-year="2014">2014</div>
+                    <div class="scroll-path__item scroll-path__item--archive" data-year="2013">2013</div>
+                    <div class="scroll-path__item scroll-path__item--archive" data-year="2012">2012</div>
+                    <div class="scroll-path__item scroll-path__item--archive" data-year="2011">2011</div>
+                    <div class="scroll-path__item scroll-path__item--archive" data-year="2010">2010</div>
+                    <div class="scroll-path__item scroll-path__item--archive" data-year="2009">2009</div>
+                    <div class="scroll-path__item scroll-path__item--archive" data-year="2008">2008</div>
+                </div>
+                <svg class="scroll__angle" width="15" height="8" viewBox="0 0 15 8" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Canvas" transform="translate(1350 317)">
+                        <g id="Vector">
+                            <use xlink:href="#path0_stroke" transform="translate(-1349.5 -316.5)"
+                                 fill="#B9B7B7"/>
+                        </g>
+                    </g>
+                    <defs>
+                        <path id="path0_stroke"
+                              d="M 7 6.5L 6.65977 6.8664L 7.01285 7.19425L 7.35355 6.85355L 7 6.5ZM -0.340226 0.366397L 6.65977 6.8664L 7.34023 6.1336L 0.340226 -0.366397L -0.340226 0.366397ZM 7.35355 6.85355L 13.8536 0.353553L 13.1464 -0.353553L 6.64645 6.14645L 7.35355 6.85355Z"/>
+                    </defs>
+                </svg>
+            </div>
+            <div class="scroll-path__item-dots scroll-path__item-dots--next">...</div>
+        </div>
+        <div class="sidebar__social sidebar__social--event">
+            <div class="sidebar__social-inner-wrap">
+                <a href="" class="sidebar__social-item">
+                    <svg class="icon icon-vk">
+                        <use xlink:href="img/sprite.svg#vk"/>
+                    </svg>
+                </a>
+                <a href="" class="sidebar__social-item">
+                    <svg class="icon icon-fb">
+                        <use xlink:href="img/sprite.svg#fb"/>
+                    </svg>
+                </a>
+                <a href="" class="sidebar__social-item">
+                    <svg class="icon icon-tw">
+                        <use xlink:href="img/sprite.svg#tw"/>
+                    </svg>
+                </a>
+                <a href="" class="sidebar__social-item">
+                    <svg class="icon icon-in">
+                        <use xlink:href="img/sprite.svg#in"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.4.1/lazyload.min.js"></script>
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/vendor/niceScroll.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

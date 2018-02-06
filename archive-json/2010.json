@@ -1,0 +1,60 @@
+{
+    "events": [{
+            "name": "SATYRICON",
+            "date": "17 декабря 2010",
+            "img": "img/test-images/13.jpg",
+            "link": ""
+        },
+        {
+            "name": "SATYRICON",
+            "date": "17 декабря 2010",
+            "img": "img/test-images/14.jpg",
+            "link": ""
+        },
+        {
+            "name": "SATYRICON",
+            "date": "17 декабря 2010",
+            "img": "img/test-images/15.jpg",
+            "link": ""
+        },
+        {
+            "name": "SATYRICON",
+            "date": "17 декабря 2010",
+            "img": "img/test-images/16.jpg",
+            "link": ""
+        },
+        {
+            "name": "SATYRICON",
+            "date": "17 декабря 2010",
+            "img": "img/test-images/17.jpg",
+            "link": ""
+        },
+        {
+            "name": "SATYRICON",
+            "date": "17 декабря 2010",
+            "img": "img/test-images/18.jpg",
+            "link": ""
+        },
+        {
+            "name": "SATYRICON",
+            "date": "17 декабря 2010",
+            "img": "img/test-images/19.jpg",
+            "link": ""
+        },
+        {
+            "name": "SATYRICON",
+            "date": "17 декабря 2010",
+            "img": "img/test-images/20.jpg",
+            "link": ""
+        },
+        {
+            "name": "SATYRICON",
+            "date": "17 декабря 2010",
+            "img": "img/test-images/21.jpg",
+            "link": ""
+        }
+
+
+    ]
+
+}

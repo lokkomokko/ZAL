@@ -7,15 +7,13 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="img/icons/icon.png">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
 
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="main-page" >
-<div id="app">
     <div class="wrapper">
         <header class="container-fluid">
             <div class="header row align-items-center justify-content-between">
@@ -25,12 +23,39 @@
                     </svg>
                 </a>
                 <div class="header__nav mx-auto">
+
+                    <span class="header__right-adress header__right-adress--disable">
+                        <img src="img/loc.svg" alt="" class="header-icon ">
+                        <span>Наб. Обводного канала, 118</span>
+                    </span>
+
                     <a class="nav-item" href=""><span>афиша</span></a>
                     <a class="nav-item" href=""><span>о клубе</span></a>
                     <a class="nav-item" href=""><span>аренда</span></a>
                     <a class="nav-item" href=""><span>архив</span></a>
                     <a class="nav-item" href=""><span>контакты</span></a>
-
+                    <div class="header__nav-social">
+                        <a href="" class="sidebar__social-item">
+                            <svg class="icon icon-vk">
+                                <use xlink:href="img/sprite.svg#vk"/>
+                            </svg>
+                        </a>
+                        <a href="" class="sidebar__social-item">
+                            <svg class="icon icon-fb">
+                                <use xlink:href="img/sprite.svg#fb"/>
+                            </svg>
+                        </a>
+                        <a href="" class="sidebar__social-item">
+                            <svg class="icon icon-tw">
+                                <use xlink:href="img/sprite.svg#tw"/>
+                            </svg>
+                        </a>
+                        <a href="" class="sidebar__social-item">
+                            <svg class="icon icon-in">
+                                <use xlink:href="img/sprite.svg#in"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="header__right row no-gutters align-items-center justify-content-between">
 
@@ -39,9 +64,19 @@
                         (812) 913 35 63
                     </a>
                     <span class="header__right-adress">
-                                    <img class="header-icon " src="img/loc.svg" alt="">
-                                    <span>Наб. Обводного канала, 118</span>
-                                </span>
+                        <img class="header-icon " src="img/loc.svg" alt="">
+                        <span>Наб. Обводного канала, 118</span>
+                    </span>
+                    <div class="header-search__wrap header-search__wrap--hide">
+                        <form action="">
+                            <input type="text" placeholder="Поиск">
+                        </form>
+                    </div>
+
+                    <div class="header__mobile-icon">
+                        <img class="mobile-open" src="img/mobile-icon.svg" alt="">
+                        <img class="mobile-close" src="img/mobile-close.svg" alt="">
+                    </div>
                 </div>
             </div>
         </header>
@@ -49,29 +84,6 @@
             <div class="row ">
                 <div class="event-wrapper col px-0">
 
-                    <!--<transition-group name="list">-->
-
-                                      <!--v-on:before-enter="beforeEnter"-->
-                                      <!--v-on:enter="enter"-->
-                                      <!--v-on:after-enter="afterEnter"-->
-                                      <!--v-on:enter-cancelled="enterCancelled"-->
-                                      <!--v-on:before-leave="beforeLeave"-->
-                                      <!--v-on:leave="leave"-->
-                                      <!--v-on:after-leave="afterLeave"-->
-                                      <!--v-on:leave-cancelled="leaveCancelled"-->
-                    <!--&gt;-->
-                        <!--<a v-for="item in show_events" >-->
-                            <!--<img :src="item.img" alt="">-->
-                            <!--<span class="event__info">-->
-                                    <!--<span class="event__info-top">-->
-                                        <!--<p class="event__date">{{item.date}}</p>-->
-                                        <!--<h3 class="event__name">{{item.name}}</h3>-->
-                                        <!--<p class="event__desc">{{item.desc}}</p>-->
-                                    <!--</span>-->
-                                    <!--<span class="event__btn btn">купить билет</span>-->
-                                <!--</span>-->
-                        <!--</a>-->
-                    <!--</transition-group>-->
                 </div>
 
             </div>
@@ -85,10 +97,7 @@
             <div class="scroll__nav">
                 <div class="scroll-path">
 
-                    <div v-for="item, index in events" key="index" :data-index="index" class="scroll-path__item"
-                         @click="list_render(item)">
-                        <span class="scroll-path__item-line"></span>
-                    </div>
+
 
                     <svg class="scroll__angle" width="15" height="8" viewBox="0 0 15 8" version="1.1"
                          xmlns="http://www.w3.org/2000/svg"
@@ -108,32 +117,35 @@
                 </div>
             </div>
             <div class="sidebar__social">
-                <a href="" class="sidebar__social-item">
-                    <svg class="icon icon-vk">
-                        <use xlink:href="img/sprite.svg#vk"/>
-                    </svg>
-                </a>
-                <a href="" class="sidebar__social-item">
-                    <svg class="icon icon-fb">
-                        <use xlink:href="img/sprite.svg#fb"/>
-                    </svg>
-                </a>
-                <a href="" class="sidebar__social-item">
-                    <svg class="icon icon-tw">
-                        <use xlink:href="img/sprite.svg#tw"/>
-                    </svg>
-                </a>
-                <a href="" class="sidebar__social-item">
-                    <svg class="icon icon-in">
-                        <use xlink:href="img/sprite.svg#in"/>
-                    </svg>
-                </a>
+                <div class="sidebar__social-inner-wrap">
+                    <a href="" class="sidebar__social-item">
+                        <svg class="icon icon-vk">
+                            <use xlink:href="img/sprite.svg#vk"/>
+                        </svg>
+                    </a>
+                    <a href="" class="sidebar__social-item">
+                        <svg class="icon icon-fb">
+                            <use xlink:href="img/sprite.svg#fb"/>
+                        </svg>
+                    </a>
+                    <a href="" class="sidebar__social-item">
+                        <svg class="icon icon-tw">
+                            <use xlink:href="img/sprite.svg#tw"/>
+                        </svg>
+                    </a>
+                    <a href="" class="sidebar__social-item">
+                        <svg class="icon icon-in">
+                            <use xlink:href="img/sprite.svg#in"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
+
+<div class="hidden image-preload">
+
 </div>
-
-
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
 
