@@ -83,7 +83,10 @@
         }
         &:hover {
             .ar-item__img {
-                &:before, &:after {
+                &:before {
+                    opacity: .6;
+                }
+                &:after {
                     opacity: 1;
                 }
             }

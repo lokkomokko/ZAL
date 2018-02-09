@@ -10,6 +10,7 @@
         padding: em(40px) 0 em(50px);
     }
     &__adress {
+        line-height: 1.4;
         &-wrap {
             padding: em(33px) 0;
         }
@@ -40,10 +41,21 @@
     .nav-item:hover {
         background: #0D0D0D;
         span {
-            border-bottom-color: #000000;
+            border-bottom-color: #0D0D0D;
         }
     }
-
+    &__mobile-social {
+        justify-content: center;
+        align-items: center;
+        display: none;
+        margin-bottom: 1em;
+        &-item {
+            margin: 0 em(10px);
+            svg {
+                fill: #fff ;
+            }
+        }
+    }
 }
 #map{
     height: 341px;

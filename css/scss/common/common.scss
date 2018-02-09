@@ -13,6 +13,35 @@
 .container-fluid {
     width: 100%;
 }
+.overflow-hidden {
+    overflow: hidden;
+
+    .header__nav{
+        position: fixed;
+        height: auto;
+        bottom: 0;
+        overflow: scroll;
+    }
+    .header__nav-social {
+        margin-left: -91px;
+    }
+    .sidebar {
+        position: absolute;
+    }
+    .header__right-call {
+        margin-bottom: 80px;
+    }
+    .header__nav-social {
+        display: flex;
+        display: -webkit-box;
+    }
+}
+.event-archive {
+    .scroll {
+        background-color: $gray;
+    }
+
+}
 
 .sidebar {
     width: 63px;
@@ -24,7 +53,10 @@
     right: 0;
     top: 0;
     bottom: 0;
-    //background: #E8F0F1;
+
+    &--about {
+        background: $gray;
+    }
     &__event-fill {
         background-color: $gray;
         width: 63px;
@@ -36,7 +68,7 @@
         z-index: 10;
         span {
             height: 32vw;
-            max-height: 610px;
+            //max-height: 610px;
             background-color: red;
             display: block;
             width: 63px;

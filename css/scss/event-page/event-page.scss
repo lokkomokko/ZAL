@@ -1,9 +1,10 @@
 .e {
+
     &-info {
         position: relative;
         min-height: 332px;
         box-sizing: border-box;
-        padding: em(36) 0 em(30) 0;
+        padding: em(48) 0 em(30) 0;
         z-index: 1;
         margin-top: em(30px);
         &:after {
@@ -31,10 +32,11 @@
             font-family: museo_2;
             line-height: 1em;
             font-size: em(48px);
-            text-transform: uppercase;
+
         }
         &__title {
             margin-bottom: em(2);
+            padding-right: rem(35);
         }
         &__desc {
             font-family: museo_2;
@@ -45,7 +47,10 @@
         }
 
         &__bottom {
-
+            margin-top: rem(43);
+            &-double {
+                margin-top: rem(45);
+            }
         }
     }
     &-date {
@@ -54,7 +59,7 @@
 
         }
         &__right {
-            text-align: right;
+            //text-align: right;
             line-height: em(18px);
             padding-top: 2px;
         }
@@ -69,6 +74,7 @@
             width: auto;
             flex-basis: auto;
             padding-right: 0;
+            text-transform: uppercase;
         }
         &__time {
             font-size: em(14px);
@@ -102,6 +108,11 @@
             font-size: em(12px);
             color: rgba(54, 71, 79, 0.59409);
             margin-top: auto;
+        }
+        &__no-tickets {
+            font-size: 12px;
+            color: $red;
+            margin-top: 21px;
         }
 
     }
@@ -172,15 +183,35 @@
     }
     &-image {
         height: 32vw;
-        max-height: 610px;
+        &__mobile {
+            display: none;
+            margin-left: -40px;
+            width: calc(100% + 54px);
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
         img {
             @extend %img;
         }
     }
     &-text {
         margin-top: em(40);
-        line-height: em(26px);
-        color: #36474F;
+        line-height: em(26px) !important;
+        color: #36474F !important;
+        font-family: museo_1 !important;
+        font-size: 1em !important;
+
+        p, span {
+            line-height: em(26px) !important;
+            color: #36474F !important;
+            font-family: museo_1 !important;
+            font-size: 1em !important;
+        }
+        &--archive {
+            margin-left: 80px;
+        }
     }
     &-con {
         max-width: 1115px;
@@ -207,10 +238,13 @@
             font-size: em(14px);
             box-sizing: border-box;
             padding: rem(78) 15px rem(60);
+            min-height: 327px;
         }
         &__name {
             color: $red;
             font-size: rem(28);
+            line-height: 1.1;
+            margin-top: em(4px);
 
         }
         &__next, &__prev {
@@ -317,7 +351,9 @@
             }
         }
         &__all {
-
+            position: absolute;
+            top: 78px;
+            left: calc(50% - 33.333333% / 2);
         }
         &__date {
             display: block;
@@ -376,6 +412,37 @@
             }
         }
     }
+    &-archive {
+
+        .e-sharing__soc {
+            margin-top: 0;
+        }
+        .e-other__arrow {
+            display: none;
+        }
+        &__text {
+            font-size: 14px;
+            letter-spacing: 0.107143em;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        &__last {
+            margin-top: em(40px);
+            &-title {
+                font-weight: bold;
+                letter-spacing: 0.05em;
+                font-size: 14px;
+                margin-bottom: 4px;
+            }
+            li {
+                line-height: 25px;
+                font-size: 14px;
+                letter-spacing: 0.05em;
+                padding-left: em(26px);
+                background: url('../../img/check.svg') no-repeat left center;
+            }
+        }
+    }
 }
 
 .hide_calend {
@@ -395,7 +462,7 @@
     &__name {
         pointer-events: none;
     }
-    a, &__name  {
+    a, &__name {
         height: 26px;
         transition: .2s;
         background-color: #7E8C91;

@@ -1,0 +1,106 @@
+.about {
+    &-top {
+        position: relative;
+        &__img {
+            height: 30vw;
+            img {
+                @extend %img;
+                object-position: center;
+            }
+        }
+        &__wrap {
+            background-color: #333333;
+            color: #fff;
+            padding: em(74) 0 em(85);
+        }
+        &__desc {
+            margin-bottom: em(80);
+            p {
+                max-width: 650px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+    }
+
+    &-info {
+        &__item {
+            img {
+                margin-top: em(11);
+            }
+            &:last-of-type {
+                img {
+                    margin-top: 0;
+                    margin-left: 13px;
+                }
+            }
+        }
+        &__img {
+            flex-basis: 0;
+            max-width: none;
+            padding-right: 0;
+        }
+        &__num {
+            &-1 {
+                font-size: em(28px);
+                font-family: museo_2;
+                color: $red;
+                letter-spacing: -0.00925926em;
+                display: inline-block;
+                margin-right: em(2px);
+            }
+            &-2 {
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: $red;
+                display: inline-block;
+                font-size: em(11);
+            }
+            &-3 {
+                font-size: em(12px);
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                margin-top: em(-6);
+                white-space: nowrap;
+            }
+        }
+    }
+    &-text {
+        box-sizing: border-box;
+        padding: em(90px) 0;
+        &__p {
+            max-width: 650px;
+            line-height: em(26px);
+        }
+    }
+    &-two {
+        img {
+            @extend %img;
+            width: calc(100% + 1px);
+        }
+    }
+    &-bottom {
+        background-color: #333333;
+        color: #fff;
+        box-sizing: border-box;
+        padding: em(77) 0;
+        &__text {
+            width: 100%;
+            display: block;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img {
+            margin-bottom: em(70px);
+            width: 100%;
+            height: auto;
+        }
+        &__text {
+            line-height: em(26);
+        }
+    }
+
+}

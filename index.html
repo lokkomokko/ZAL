@@ -17,23 +17,30 @@
     <div class="wrapper">
         <header class="container-fluid">
             <div class="header row align-items-center justify-content-between">
+
                 <a href="" class="header__logo">
                     <svg class="icon icon-logo">
                         <use xlink:href="img/sprite.svg#logo"/>
                     </svg>
                 </a>
-                <div class="header__nav mx-auto">
 
-                    <span class="header__right-adress header__right-adress--disable">
-                        <img src="img/loc.svg" alt="" class="header-icon ">
-                        <span>Наб. Обводного канала, 118</span>
-                    </span>
+                <div class="header__nav mx-auto">
 
                     <a class="nav-item" href=""><span>афиша</span></a>
                     <a class="nav-item" href=""><span>о клубе</span></a>
                     <a class="nav-item" href=""><span>аренда</span></a>
                     <a class="nav-item" href=""><span>архив</span></a>
                     <a class="nav-item" href=""><span>контакты</span></a>
+
+                    <span class="header__right-adress header__right-adress--disable">
+                        <img src="img/loc.svg" alt="" class="header-icon ">
+                        <span>Наб. Обводного канала, 118</span>
+                    </span>
+                    <a href="tel:78129133563" class="header__right-call hidden">
+                        <img class="header-icon" src="img/call.svg" alt="">
+                        <span>(812) 913 35 63</span>
+                    </a>
+
                     <div class="header__nav-social">
                         <a href="" class="sidebar__social-item">
                             <svg class="icon icon-vk">
@@ -61,11 +68,11 @@
 
                     <a href="tel:78129133563" class="header__right-call ">
                         <img class="header-icon" src="img/call.svg" alt="">
-                        (812) 913 35 63
+                        <span>(812) 913 35 63</span>
                     </a>
                     <span class="header__right-adress">
                         <img class="header-icon " src="img/loc.svg" alt="">
-                        <span>Наб. Обводного канала, 118</span>
+                        <span>наб. Обводного канала 118 лит. С</span>
                     </span>
                     <div class="header-search__wrap header-search__wrap--hide">
                         <form action="">
@@ -89,9 +96,10 @@
             </div>
         </main>
     </div>
-    <div class="sidebar">
+    <div class="sidebar sidebar--main">
         <div class="sidebar__search ">
-            <img src="img/search.svg" alt="">
+            <img class="sidebar__search--search-icon" src="img/search.svg" alt="">
+            <img class="sidebar__search--close-icon" src="img/cancel.svg" alt="">
         </div>
         <div class="scroll">
             <div class="scroll__nav">

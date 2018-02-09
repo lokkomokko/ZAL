@@ -332,13 +332,14 @@ $(document).ready(function () {
             window.elems_count = 4
         }
 
-        window.mobile = win_width <= 768 || is_iPad;
+        window.mobile = win_width <= 850 || is_iPad;
 
         // принимаем данные
         var self = this;
         $.ajax({
             type: "GET",
             url: "/events/index/get-list-events",
+            // url: "json-example.json",
             success: function (data) {
 
                 // собираем объекты массивов отображаемых мероприятий
@@ -380,7 +381,7 @@ $(document).ready(function () {
                     data.events.forEach(function (item) {
                         arr_mobile.push(item);
                     });
-                    self.makeTemplate(arr_mobile)
+                    makeTemplate(arr_mobile)
                 }
 
             },
@@ -518,7 +519,7 @@ $(document).ready(function () {
             e.preventDefault ? e.preventDefault() : (e.returnValue = false);
         }
 
-        $('.header__right-adress').addClass('header__right-adress--disable')
+
     }
 
 
@@ -587,9 +588,15 @@ $(document).ready(function () {
 
 
     }
-    $('.header__mobile-icon').click(function () {
+    else {
+        $('.header__right-adress').addClass('header__right-adress--disable');
+    }
 
+    //========== Common events ==============================
+
+    $('.header__mobile-icon').click(function () {
         $(this).toggleClass('header__mobile-icon--open')
+        $('html').toggleClass('overflow-hidden');
         $('.header__nav').toggleClass('header__nav--open')
     });
 
@@ -599,6 +606,36 @@ $(document).ready(function () {
 
     if ($('.e-top').length >= 1) {
         $('.e-sharing__img ').fancybox()
+
+        if ($('.e-sharing__img img').length === 0 || $('.e-sharing__img img').height() === 0) {
+            $('.e-info__top, .e-info__bottom').addClass('e-info--no-image');
+        }
+        var got_img = false;
+
+        function mobile_img() {
+            if (got_img === false || $('.e-image__mobile').length === 0) {
+                $('.e-top__left').prepend('<div class="e-image__mobile"></div>');
+                $('.e-image__mobile').append($('.e-image').html())
+                got_img = true;
+            }
+        }
+
+        if ($(window).width() <= 660) {
+            mobile_img()
+        }
+        $(window).resize(function () {
+            mobile_img()
+        })
+
+    }
+    //====== Event ARICHIVE page =====================================
+
+    if ($('.e-archive').length >= 1) {
+        $('body').addClass('event-archive');
+
+        if ($('.e-image').length === 0) {
+            $('.e-text').addClass('e-text--archive');
+        }
     }
 
 
@@ -608,8 +645,8 @@ $(document).ready(function () {
 
         var myLazyLoad = new LazyLoad();
 
-        $('.footer__map').hide();
-        // загреженные года
+        $('.footer__map, .footer__adress-wrap').hide();
+        // загруженные года
         var used_years = [];
 
         // шаблон event-a
@@ -658,8 +695,8 @@ $(document).ready(function () {
             if (used_years.indexOf(year) === -1) {
                 $.ajax({
                     type: "GET",
-                    // url: "/archive-year/" + String(year),
-                    url: "/archive-json/" + String(year) + '.json',
+                    url: "/archive-year/" + String(year),
+                    // url: "/archive-json/" + String(year) + '.json',
                     success: function (data) {
                         renderRow(year, data.events)
                     },
@@ -695,7 +732,7 @@ $(document).ready(function () {
 
         // функция чека событий во вьюпорте
         function isScrolledIntoView(elem) {
-            var path = 450;
+            var path = 400;
             var docViewTop = $(window).scrollTop();
 
             var elemTop = $(elem).offset().top;
