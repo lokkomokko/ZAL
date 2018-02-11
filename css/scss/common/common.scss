@@ -150,6 +150,8 @@
     }
 }
 
+
+
 .hidden {
     display: none;
 }
@@ -172,7 +174,7 @@
     white-space: nowrap;
     &:active {
         box-shadow: rgba(176, 55, 55, 0.81) 0px 2px 23px -3px;
-        font-size: em(13);
+        transform: scale(.9);
     }
     &:hover {
         background-color: transparent;

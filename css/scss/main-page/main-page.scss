@@ -16,6 +16,12 @@
     display: inline-block;
     float: left;
     overflow: hidden;
+    &--no-pay {
+        .event__btn {
+            opacity: 0 !important;
+            pointer-events: none;
+        }
+    }
     img {
         width: 100%;
     }

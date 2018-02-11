@@ -35,11 +35,15 @@ body {
 
 
 @import "scss/common/header";
+@import "scss/common/slick";
+@import "scss/common/slick-theme";
+@import "scss/common/clndr.css";
 @import "scss/main-page/main-page";
 @import "scss/event-page/event-page";
 @import "scss/footer/footer";
 @import "scss/archive/archive";
 @import "scss/about/about";
+@import "scss/rent/rent";
 
 
 @import "scss/media/media";

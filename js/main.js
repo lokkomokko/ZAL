@@ -24,8 +24,8 @@ $(document).ready(function () {
                 }
             }
             // меняем активное поле
-            console.log(obj.array, window.show_events)
-            render(obj.array, window.show_events, index)
+
+            render(obj.array, window.show_events, index);
             window.show_events = obj.array;
             window.show_events['index'] = index;
 
@@ -52,16 +52,19 @@ $(document).ready(function () {
                     events_counts_list = 12;
                 }
                 array.forEach(function (item) {
+                    var event_class = item.pay_btn === true ? 'event' : 'event event--no-pay';
+                    var desc = item.desc === null ? '' : item.desc;
                     wrapper.append(
-                        '            <a href="' + item.link + '" class="event">\n' +
+                        '            <a href="' + item.link + '" class="' + event_class + '">\n' +
                         '                    <span class="event__img"><span class="event__bg"></span><img src="' + item.img + '" alt=""></span>\n' +
                         '                    <span class="event__info">\n' +
                         '                        <span class="event__info-top">\n' +
                         '                            <p class="event__date">' + item.date + '</p>\n' +
                         '                            <h3 class="event__name">' + item.name + '</h3>\n' +
-                        '                            <p class="event__desc">' + item.desc + '</p>\n' +
+                        '                            <p class="event__desc">' + desc + '</p>\n' +
                         '                        </span>\n' +
-                        '                        <span class="event__btn btn">купить билет</span>\n' +
+                        '                        <span class="event__btn btn" id="' + item.id + '" data-radario-event-id="' + item.radario_id + '">купить билет</span>\n' +
+                        '<script data-custom-button-id="' + item.id + '" data-event-id="' + item.radario_id + '" data-custom-name="Купить билет" data-class="radarioButtonScript" src="https://radario.ru/scripts/widget/buy-button-widget.js" id="radario-widget-12.318613760939723"></script>\n' +
                         '                    </span>\n' +
                         '                </a>'
                     );
@@ -91,16 +94,20 @@ $(document).ready(function () {
             else {
                 $('.event-wrapper').append('<span class="list"></span>');
                 array.forEach(function (item) {
+                    var event_class = item.pay_btn === true ? 'event' : 'event event--no-pay';
+                    var desc = item.desc === null ? '' : item.desc;
+
                     $('.list').append(
-                        '            <a href="' + item.link + '" class="event">\n' +
+                        '            <a href="' + item.link + '" class="' + event_class + '">\n' +
                         '                    <span class="event__img"><span class="event__bg"></span><img src="' + item.img + '" alt=""></span>\n' +
                         '                    <span class="event__info">\n' +
                         '                        <span class="event__info-top">\n' +
                         '                            <p class="event__date">' + item.date + '</p>\n' +
                         '                            <h3 class="event__name">' + item.name + '</h3>\n' +
-                        '                            <p class="event__desc">' + item.desc + '</p>\n' +
+                        '                            <p class="event__desc">' + desc + '</p>\n' +
                         '                        </span>\n' +
-                        '                        <span class="event__btn btn">купить билет</span>\n' +
+                        '                        <span class="event__btn btn" id="' + item.id + '" data-radario-event-id="' + item.radario_id + '">купить билет</span>\n' +
+                        '<script data-custom-button-id="' + item.id + '" data-event-id="' + item.radario_id + '" data-custom-name="Купить билет" data-class="radarioButtonScript" src="https://radario.ru/scripts/widget/buy-button-widget.js" id="radario-widget-12.318613760939723"></script>\n' +
                         '                    </span>\n' +
                         '                </a>'
                     );
@@ -610,6 +617,11 @@ $(document).ready(function () {
         if ($('.e-sharing__img img').length === 0 || $('.e-sharing__img img').height() === 0) {
             $('.e-info__top, .e-info__bottom').addClass('e-info--no-image');
         }
+
+        if ($('.e-image').length === 0) {
+            $('.e-text').addClass('e-text--archive');
+        }
+
         var got_img = false;
 
         function mobile_img() {
@@ -633,11 +645,167 @@ $(document).ready(function () {
     if ($('.e-archive').length >= 1) {
         $('body').addClass('event-archive');
 
-        if ($('.e-image').length === 0) {
-            $('.e-text').addClass('e-text--archive');
-        }
-    }
 
+    }
+    // ====== Rent page ===================================
+
+    if ($('.rent-content').length >= 1) {
+
+        $('body').addClass('rent-wrapper');
+
+        $('.rent-calend__slider').slick({
+            dots: true,
+            speed: 1000,
+            autoplay: true,
+            pauseOnHover: false,
+            fade: true,
+            slidesToShow: 1,
+            variableWidth: false,
+            arrows: false
+        });
+
+
+        var disable_days = [];
+
+        // убираем лишние дни
+        $('.calendar-days-hidden span').each(function (i) {
+            var day = $(this).text();
+            disable_days[i] = {date: day}
+        });
+
+        var calendar = $('.cal1').clndr({
+            moment: moment,
+            events: disable_days,
+            clickEvents: {
+                click: function (target) {
+                    var can_add_event = true;
+                    calendar.options.events.forEach(function (value) {
+                        if (value.date === target.date._i) {
+                            can_add_event = false;
+                        }
+                    });
+                    if (can_add_event) {
+                        calendar.addEvents([{date: target.date._i}]);
+                        arrows()
+                    }
+                    else {
+                        calendar.removeEvents(function (event) {
+                            return event.date === target.date._i;
+                        });
+                        arrows()
+                    }
+
+                    console.log(calendar.options.events)
+
+                },
+                today: function () {
+                    console.log('Cal-1 today');
+                },
+                nextMonth: function () {
+                    arrows()
+                },
+                previousMonth: function () {
+                    arrows()
+                },
+                onMonthChange: function () {
+                    console.log('Cal-1 month changed');
+                },
+                nextYear: function () {
+                    console.log('Cal-1 next year');
+                },
+                previousYear: function () {
+                    console.log('Cal-1 previous year');
+                },
+                onYearChange: function () {
+                    console.log('Cal-1 year changed');
+                },
+                nextInterval: function () {
+                    console.log('Cal-1 next interval');
+                },
+                previousInterval: function () {
+                    console.log('Cal-1 previous interval');
+                },
+                onIntervalChange: function () {
+                    console.log('Cal-1 interval changed');
+                }
+            },
+            daysOfTheWeek: ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПН', 'СБ', 'ВС'],
+            targets: {
+                day: 'day',
+                empty: 'empty',
+                nextButton: 'clndr-next-button',
+                todayButton: 'clndr-today-button',
+                previousButton: 'clndr-previous-button',
+                nextYearButton: 'clndr-next-year-button',
+                previousYearButton: 'clndr-previous-year-button',
+            },
+
+            classes: {
+                past: "past",
+                today: "today",
+                event: "day-event",
+                selected: "selected",
+                inactive: "inactive",
+                lastMonth: "last-month",
+                nextMonth: "next-month",
+                adjacentMonth: "adjacent-month",
+            },
+            doneRendering: function (e) {
+                disable_days.forEach(function (value) {
+
+                    $('.calendar-day-' + value.date).removeClass('day-event').addClass('day-disable')
+                    // console.log($('.day-event').removeClass('day-event').addClass('day-disable'))
+                })
+            },
+
+        });
+
+        function arrows() {
+            $('.clndr-previous-button').text('‹');
+            $('.clndr-next-button').text('›')
+        }
+        arrows();
+
+        $('.rent-calend__btn').click(function () {
+
+            var all_dates = [],
+                need_dates = [],
+                hidden_dates = [];
+
+            calendar.options.events.forEach(function (value) {
+                all_dates.push(value.date);
+            });
+            disable_days.forEach(function (value) {
+                hidden_dates.push(value.date)
+            });
+            all_dates.forEach(function (value) {
+
+                if  ( hidden_dates.indexOf( value ) === -1 ) {
+                    need_dates.push(value)
+                }
+
+            });
+
+
+            if (need_dates.length !== 0) {
+
+                $('html, body').animate({
+                    scrollTop: $(".rent-proposal__wrap").offset().top - 64
+                }, 1000);
+
+                need_dates = String(need_dates).replace(/,/g, ';  ');
+                $('#date').val(need_dates)
+            }
+            else {
+                $('.rent-calend__error').css('opacity', 1);
+                setTimeout(function () {
+                    $('.rent-calend__error').css('opacity', 0)
+                }, 1000)
+            }
+
+        })
+
+    }
 
     // ====== Archive page ===================================
 

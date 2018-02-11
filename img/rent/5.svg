@@ -1,0 +1,20 @@
+<svg width="40" height="40" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>noun_362861_cc</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(8605 3079)">
+<g id="noun_362861_cc">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(-8605 -3078.95)" fill="#EE2324"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(-8593.74 -3066.42)" fill="#EE2324"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 19.9975 39.9476C 31.0424 39.9476 39.995 31.0056 39.995 19.9738C 39.995 8.94201 31.0424 0 19.9975 0C 8.95263 0 0 8.94201 0 19.9738C 0 31.0056 8.95263 39.9476 19.9975 39.9476ZM 19.9975 1.24836C 30.335 1.24836 38.7452 9.64859 38.7452 19.9738C 38.7452 30.299 30.335 38.6992 19.9975 38.6992C 9.66004 38.6992 1.24984 30.299 1.24984 19.9738C 1.24984 9.64859 9.66004 1.24836 19.9975 1.24836Z"/>
+<path id="path1_fill" d="M 18.6164 0.73903L 17.609 -3.71445e-07L 7.5928 13.6071L 0.812398 7.80226L 4.67242e-07 8.75102L 7.80278 15.4297L 18.6164 0.73903Z"/>
+</defs>
+</svg>

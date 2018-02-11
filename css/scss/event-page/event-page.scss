@@ -247,6 +247,9 @@
             margin-top: em(4px);
 
         }
+        &__next {
+            margin-left: auto;
+        }
         &__next, &__prev {
             max-width: 242px;
             position: relative;
