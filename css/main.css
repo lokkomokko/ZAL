@@ -1792,12 +1792,13 @@ body {
 .rent-wrapper .sidebar__event-fill span {
   height: calc(24vw + 92px); }
 .rent-text {
-  padding: 3.125rem 0 5rem; }
+  padding: 3.125rem 0 3.75rem; }
 .rent-icon__wrap {
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  margin-top: 5em; }
 .rent-icon__item {
   width: calc(100% / 5 - 4px);
   display: -webkit-inline-box;
@@ -1852,7 +1853,8 @@ body {
     -webkit-transition: .2s;
     transition: .2s; }
   .rent-proposal__wrap {
-    max-width: 640px; }
+    max-width: 650px;
+    padding: 0; }
     .rent-proposal__wrap p {
       line-height: 1.625em; }
   .rent-proposal__title {
@@ -1872,7 +1874,8 @@ body {
     height: 132px;
     width: 100%;
     padding-left: 0.625em;
-    padding-top: 0.3125em; }
+    padding-top: 0.3125em;
+    border: none; }
     .rent-proposal textarea::-webkit-input-placeholder {
       color: #000; }
     .rent-proposal textarea:-moz-placeholder {
@@ -2042,7 +2045,10 @@ body {
             align-items: center; }
 
   .cal1 {
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  .rent-calend__error {
+    top: calc(50% + 72px); } }
 @media screen and (max-width: 1279px) {
   .header__right {
     width: 20px;
@@ -2869,6 +2875,9 @@ body {
   .nav-item {
     font-size: 12px;
     line-height: 1; }
+
+  .header-search__wrap {
+    left: 15px; }
 
   .header__mobile-icon {
     position: absolute;

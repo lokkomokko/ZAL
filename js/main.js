@@ -653,6 +653,8 @@ $(document).ready(function () {
 
         $('body').addClass('rent-wrapper');
 
+        $('.rent-calend__slider-item').fancybox();
+
         $('.rent-calend__slider').slick({
             dots: true,
             speed: 1000,

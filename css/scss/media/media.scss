@@ -17,6 +17,9 @@
     .cal1 {
         margin-top: 0;
     }
+    .rent-calend__error {
+        top: calc(50% + 72px);
+    }
 }
 
 @media screen and (max-width: 1279px) {
@@ -943,17 +946,9 @@
         font-size: 12px;
         line-height: 1;
     }
-    //html {
-    //    font-size: 12px;
-    //}
-
-    //.e-info:after {
-    //    bottom: 9px;
-    //}
-    //.e-date__day {
-    //    margin-right: 0;
-    //}
-
+    .header-search__wrap {
+        left: 15px;
+    }
     .header__mobile-icon {
         position: absolute;
         top: 9px;

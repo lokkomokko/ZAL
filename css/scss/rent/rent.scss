@@ -75,13 +75,14 @@
         }
     }
     &-text {
-        padding: rem(50) 0 rem(80);
+        padding: rem(50) 0 rem(60);
     }
     &-icon {
         &__wrap {
             flex-basis: 80%;
             margin: 0 auto;
             text-align: center;
+            margin-top: em(80px);
         }
         &__item {
             width: calc(100% / 5 - 4px);
@@ -127,7 +128,9 @@
             transition: .2s;
         }
         &__wrap {
-            max-width: 640px;
+            max-width: 650px;
+            padding: 0;
+
             p {
                 line-height: em(26px);
             }
@@ -153,6 +156,7 @@
             width: 100%;
             padding-left: em(10px);
             padding-top: em(5px);
+            border: none;
             &::-webkit-input-placeholder {
                 color: $color;
             }
