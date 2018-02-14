@@ -138,6 +138,13 @@
     }
     &__date {
         margin-bottom: 0;
+        display: inline;
+    }
+    &__day {
+        font-family: museo_1;
+        font-size: em(12px);
+        text-transform: uppercase;
+        display: inline;
     }
 }
 

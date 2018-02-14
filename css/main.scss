@@ -1,6 +1,6 @@
-@import "scss/normalize.css";
+@import "scss/normalize";
 //@import "scss/grid.css";
-@import "scss/bootstrap.css";
+@import "scss/bootstrap";
 @import "scss/settings/_settings";
 @import "scss/fonts/fonts";
 @import "scss/sprite/svg-sprite";
@@ -37,7 +37,7 @@ body {
 @import "scss/common/header";
 @import "scss/common/slick";
 @import "scss/common/slick-theme";
-@import "scss/common/clndr.css";
+@import "scss/common/clndr";
 @import "scss/main-page/main-page";
 @import "scss/event-page/event-page";
 @import "scss/footer/footer";

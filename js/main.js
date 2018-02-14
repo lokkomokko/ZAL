@@ -54,12 +54,13 @@ $(document).ready(function () {
                 array.forEach(function (item) {
                     var event_class = item.pay_btn === true ? 'event' : 'event event--no-pay';
                     var desc = item.desc === null ? '' : item.desc;
+                    var day = item.day === null ? '' : item.day;
                     wrapper.append(
                         '            <a href="' + item.link + '" class="' + event_class + '">\n' +
                         '                    <span class="event__img"><span class="event__bg"></span><img src="' + item.img + '" alt=""></span>\n' +
                         '                    <span class="event__info">\n' +
                         '                        <span class="event__info-top">\n' +
-                        '                            <p class="event__date">' + item.date + '</p>\n' +
+                        '                            <p class="event__date">' + item.date + '</p> <p class="event__day">' + day + '</p>\n' +
                         '                            <h3 class="event__name">' + item.name + '</h3>\n' +
                         '                            <p class="event__desc">' + desc + '</p>\n' +
                         '                        </span>\n' +
@@ -96,13 +97,14 @@ $(document).ready(function () {
                 array.forEach(function (item) {
                     var event_class = item.pay_btn === true ? 'event' : 'event event--no-pay';
                     var desc = item.desc === null ? '' : item.desc;
+                    var day = item.day === null ? '' : item.day;
 
                     $('.list').append(
                         '            <a href="' + item.link + '" class="' + event_class + '">\n' +
                         '                    <span class="event__img"><span class="event__bg"></span><img src="' + item.img + '" alt=""></span>\n' +
                         '                    <span class="event__info">\n' +
                         '                        <span class="event__info-top">\n' +
-                        '                            <p class="event__date">' + item.date + '</p>\n' +
+                        '                            <p class="event__date">' + item.date + '</p> <p class="event__day">' + day + '</p>\n' +
                         '                            <h3 class="event__name">' + item.name + '</h3>\n' +
                         '                            <p class="event__desc">' + desc + '</p>\n' +
                         '                        </span>\n' +
@@ -766,6 +768,7 @@ $(document).ready(function () {
             $('.clndr-previous-button').text('‹');
             $('.clndr-next-button').text('›')
         }
+
         arrows();
 
         $('.rent-calend__btn').click(function () {
@@ -782,7 +785,7 @@ $(document).ready(function () {
             });
             all_dates.forEach(function (value) {
 
-                if  ( hidden_dates.indexOf( value ) === -1 ) {
+                if (hidden_dates.indexOf(value) === -1) {
                     need_dates.push(value)
                 }
 
@@ -790,6 +793,10 @@ $(document).ready(function () {
 
 
             if (need_dates.length !== 0) {
+
+                if  (!$('.rent-date__help').hasClass('rent-date__help--disable')) {
+                    $('.rent-date__help').addClass('rent-date__help--disable');
+                }
 
                 $('html, body').animate({
                     scrollTop: $(".rent-proposal__wrap").offset().top - 64
@@ -805,6 +812,19 @@ $(document).ready(function () {
                 }, 1000)
             }
 
+        })
+
+        $('#date').click(function (e) {
+
+            e.preventDefault();
+            e.stopPropagation();
+
+            $('.rent-date__help').toggleClass('rent-date__help--disable');
+        })
+        $('.rent-date__help').click(function () {
+            $('html, body').animate({
+                scrollTop: $(".rent-content").offset().top
+            }, 1000);
         })
 
     }
@@ -1019,6 +1039,21 @@ $(document).ready(function () {
 
         })
     }
+
+    $('[data-name=submit-rent-form]').click(function () {
+        $.ajax({
+            type: "POST",
+            url: "/site/rent-order",
+            data: $('form.rent-proposal__form').serialize(),
+            success: function (data) {
+                alert(data.message)
+            },
+            error: function (error) {
+                console.log(error)
+            }
+
+        });
+    })
 });
 
 

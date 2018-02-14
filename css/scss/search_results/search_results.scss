@@ -1,0 +1,38 @@
+.s {
+    &__res {
+        display: inline-block;
+        margin-bottom: em(15px);
+    }
+    &-wrap {
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: em(80px);
+    }
+    &-item {
+        display: block;
+        margin-bottom: em(25px);
+        &__type {
+            font-size: em(12px);
+            letter-spacing: 0.08em;
+            color: #A0A2A3;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+        &__name {
+            line-height: em(18px);
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid $red;
+            display: inline-block;
+            &:hover {
+                color: $red;
+                border-bottom-color: transparent;
+            }
+        }
+        &__text {
+            line-height: rem(18);
+            font-size: rem(12);
+            margin-top: em(20px);
+        }
+    }
+}

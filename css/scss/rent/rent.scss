@@ -146,65 +146,68 @@
         &__form {
             width: 300px;
             margin: em(20px) auto 0;
-            #date {
-                pointer-events: none;
-            }
-        }
-        textarea {
-            font-size: em(12);
-            height: 132px;
-            width: 100%;
-            padding-left: em(10px);
-            padding-top: em(5px);
-            border: none;
-            &::-webkit-input-placeholder {
-                color: $color;
-            }
-
-            &:-moz-placeholder { /* Firefox 18- */
-                color: $color;
-            }
-
-            &::-moz-placeholder { /* Firefox 19+ */
-                color: $color;
-            }
-
-            &:-ms-input-placeholder {
-                color: $color;
-            }
-            &:focus {
+            position: relative;
+            textarea {
+                font-size: em(12);
+                height: 132px;
+                width: 100%;
+                padding-left: em(10px);
+                padding-top: em(5px);
+                border: none;
                 &::-webkit-input-placeholder {
-                    color: rgba(54, 71, 79, 0.3);
+                    color: $color;
                 }
 
                 &:-moz-placeholder { /* Firefox 18- */
-                    color: rgba(54, 71, 79, 0.3);
+                    color: $color;
                 }
 
                 &::-moz-placeholder { /* Firefox 19+ */
-                    color: rgba(54, 71, 79, 0.3);
+                    color: $color;
                 }
 
                 &:-ms-input-placeholder {
-                    color: rgba(54, 71, 79, 0.3);
+                    color: $color;
+                }
+                &:focus {
+                    &::-webkit-input-placeholder {
+                        color: rgba(54, 71, 79, 0.3);
+                    }
+
+                    &:-moz-placeholder { /* Firefox 18- */
+                        color: rgba(54, 71, 79, 0.3);
+                    }
+
+                    &::-moz-placeholder { /* Firefox 19+ */
+                        color: rgba(54, 71, 79, 0.3);
+                    }
+
+                    &:-ms-input-placeholder {
+                        color: rgba(54, 71, 79, 0.3);
+                    }
                 }
             }
-        }
-        input {
-            font-size: em(12);
-            border-bottom: 1px solid rgba(54, 71, 79, 0.3);
-            margin-bottom: 15px;
-            width: 100%;
-            padding-left: em(7px);
-            &::placeholder {
-                color: $color;
-            }
-            &:focus {
+            input {
+                font-size: em(12);
+                border-bottom: 1px solid rgba(54, 71, 79, 0.3);
+                margin-bottom: 15px;
+                width: 100%;
+                padding-left: em(7px);
                 &::placeholder {
-                    color: rgba(54, 71, 79, 0.3);
+                    color: $color;
+                }
+                &:focus {
+                    &::placeholder {
+                        color: rgba(54, 71, 79, 0.3);
+                    }
                 }
             }
+            #date {
+                cursor: pointer;
+                //pointer-events: none;
+            }
         }
+
         &__btn {
             margin: em(40) auto 0;
             display: block;
@@ -252,6 +255,33 @@
             letter-spacing: 0.1em;
             text-transform: uppercase;
             margin-bottom: rem(40);
+        }
+    }
+    &-date {
+        &__help {
+            font-size: 12px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $gray;
+            z-index: 1;
+            color: $red;
+            padding: 1px em(33px);
+            margin: 0 em(-30px) 0 0;
+            transition: .4s;
+            cursor: pointer;
+
+            &--disable {
+                pointer-events: none;
+                opacity: 0;
+            }
+            p {
+                display: inline-block;
+            }
+
         }
     }
 }

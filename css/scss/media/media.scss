@@ -253,6 +253,12 @@
         }
     }
 
+    .e-top {
+        display: block;
+    }
+    .e-other__wrapper {
+        overflow: hidden;
+    }
     .e-image {
         margin-top: 50px;
         height: auto;
@@ -263,6 +269,7 @@
         }
         &__wrapper {
             width: 100%;
+
             max-width: none;
         }
     }
@@ -394,6 +401,10 @@
 }
 
 @media screen and(max-width: 768px) {
+    .e-other__wrapper {
+        min-height: auto;
+        padding: 4.875rem 62px 3.75rem;
+    }
     .rent-calend__slider-item {
         height: 34vw;
     }
@@ -894,7 +905,7 @@
         margin-top: -1px;
     }
     .e-other__wrapper {
-        padding: rem(50) 15px rem(40);
+        padding: rem(50) 40px rem(40);
     }
     .e-rules__wrapper {
         padding: 30px 55px 40px;
@@ -936,7 +947,7 @@
     }
     .rent-proposal__wrap p, .rent-proposal__form {
         width: 70%;
-        min-width: 300px;
+        min-width: 265px;
         margin: 0 auto;
     }
 }
@@ -979,10 +990,13 @@
         padding: 0px 21px !important;
     }
     .e-other__wrapper {
-        padding: 4.875rem 27px 3.75rem;
+        padding: 4.875rem 45px 3.75rem;
     }
     .e-other__arrow {
-        top: calc(50% - 31px);
+        top: calc(50% - 38px);
+    }
+    .e-other__arrow--left {
+        top: calc(50% - 35px);
     }
     .e-rules__wrapper {
         padding: 93px 31px 120px;
@@ -997,9 +1011,7 @@
         margin-left: -65px;
         width: calc(100% + 65px);
     }
-    .e-other__wrapper {
-        padding: rem(40) 15px rem(30);
-    }
+
     .e-info {
         left: -17px;
     }
